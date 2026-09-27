@@ -1,0 +1,747 @@
+﻿2026-09-27T05:15:05.5886456Z Current runner version: '2.337.0'
+2026-09-27T05:15:05.5912891Z ##[group]Runner Image Provisioner
+2026-09-27T05:15:05.5913730Z Hosted Compute Agent
+2026-09-27T05:15:05.5914421Z Version: 20260828.587
+2026-09-27T05:15:05.5915112Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+2026-09-27T05:15:05.5916316Z Build Date: 2026-08-28T16:44:25Z
+2026-09-27T05:15:05.5917072Z Worker ID: {da0766bc-ada8-427b-b74e-dd969fe0e409}
+2026-09-27T05:15:05.5917813Z Azure Region: eastus
+2026-09-27T05:15:05.5918458Z ##[endgroup]
+2026-09-27T05:15:05.5920382Z ##[group]Operating System
+2026-09-27T05:15:05.5921104Z Ubuntu
+2026-09-27T05:15:05.5921660Z 24.04.5
+2026-09-27T05:15:05.5922185Z LTS
+2026-09-27T05:15:05.5922757Z ##[endgroup]
+2026-09-27T05:15:05.5923364Z ##[group]Runner Image
+2026-09-27T05:15:05.5924065Z Image: ubuntu-24.04
+2026-09-27T05:15:05.5924677Z Version: 20260920.314.1
+2026-09-27T05:15:05.5926205Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260920.314/images/ubuntu/Ubuntu2404-Readme.md
+2026-09-27T05:15:05.5927852Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314
+2026-09-27T05:15:05.5928885Z ##[endgroup]
+2026-09-27T05:15:05.5930010Z ##[group]GITHUB_TOKEN Permissions
+2026-09-27T05:15:05.5932238Z Contents: read
+2026-09-27T05:15:05.5932910Z Metadata: read
+2026-09-27T05:15:05.5933479Z ##[endgroup]
+2026-09-27T05:15:05.5935940Z Secret source: Actions
+2026-09-27T05:15:05.5937082Z Cache mode: write
+2026-09-27T05:15:05.5938139Z Prepare workflow directory
+2026-09-27T05:15:05.6323886Z Prepare all required actions
+2026-09-27T05:15:05.6371668Z Getting action download info
+2026-09-27T05:15:05.8924995Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-09-27T05:15:06.0143138Z Download action repository 'actions/setup-java@v5' (SHA:b6effb05e454b25005698d916606bdc6ffcbf961)
+2026-09-27T05:15:06.2327203Z Download action repository 'gradle/actions@v4' (SHA:ed408507eac070d1f99cc633dbcf757c94c7933a)
+2026-09-27T05:15:06.8161671Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-09-27T05:15:07.0856853Z Complete job name: Core tests (gated)
+2026-09-27T05:15:07.1899973Z ##[group]Run actions/checkout@v4
+2026-09-27T05:15:07.1901419Z with:
+2026-09-27T05:15:07.1902332Z   repository: zephyr4289/retro-manager
+2026-09-27T05:15:07.1911169Z   token: ***
+2026-09-27T05:15:07.1912060Z   ssh-strict: true
+2026-09-27T05:15:07.1912948Z   ssh-user: git
+2026-09-27T05:15:07.1913863Z   persist-credentials: true
+2026-09-27T05:15:07.1914873Z   clean: true
+2026-09-27T05:15:07.1916131Z   sparse-checkout-cone-mode: true
+2026-09-27T05:15:07.1917228Z   fetch-depth: 1
+2026-09-27T05:15:07.1918110Z   fetch-tags: false
+2026-09-27T05:15:07.1919045Z   show-progress: true
+2026-09-27T05:15:07.1919971Z   lfs: false
+2026-09-27T05:15:07.1920842Z   submodules: false
+2026-09-27T05:15:07.1921774Z   set-safe-directory: true
+2026-09-27T05:15:07.1922829Z   allow-unsafe-pr-checkout: false
+2026-09-27T05:15:07.1924225Z env:
+2026-09-27T05:15:07.1925125Z   PERF_TOTAL_BUDGET_SEC: 600
+2026-09-27T05:15:07.1926344Z   PERF_CLASS_BUDGET_SEC: 120
+2026-09-27T05:15:07.1927352Z ##[endgroup]
+2026-09-27T05:15:07.2966316Z Syncing repository: zephyr4289/retro-manager
+2026-09-27T05:15:07.2970459Z ##[group]Getting Git version info
+2026-09-27T05:15:07.2972929Z Working directory is '/home/runner/work/retro-manager/retro-manager'
+2026-09-27T05:15:07.2976701Z [command]/usr/bin/git version
+2026-09-27T05:15:07.3031977Z git version 2.55.0
+2026-09-27T05:15:07.3054897Z ##[endgroup]
+2026-09-27T05:15:07.3082173Z Temporarily overriding HOME='/home/runner/work/_temp/852221d9-f208-4b43-a6b0-f69bc4a892df' before making global git config changes
+2026-09-27T05:15:07.3087268Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-27T05:15:07.3108142Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/retro-manager/retro-manager
+2026-09-27T05:15:07.3148114Z Deleting the contents of '/home/runner/work/retro-manager/retro-manager'
+2026-09-27T05:15:07.3166263Z ##[group]Initializing the repository
+2026-09-27T05:15:07.3168015Z [command]/usr/bin/git init /home/runner/work/retro-manager/retro-manager
+2026-09-27T05:15:07.3297141Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-09-27T05:15:07.3300524Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-09-27T05:15:07.3303851Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-09-27T05:15:07.3306611Z hint: call:
+2026-09-27T05:15:07.3307942Z hint:
+2026-09-27T05:15:07.3309591Z hint: 	git config --global init.defaultBranch <name>
+2026-09-27T05:15:07.3311711Z hint:
+2026-09-27T05:15:07.3313652Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-09-27T05:15:07.3317028Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-09-27T05:15:07.3318572Z hint:
+2026-09-27T05:15:07.3320259Z hint: 	git branch -m <name>
+2026-09-27T05:15:07.3321972Z hint:
+2026-09-27T05:15:07.3324215Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-09-27T05:15:07.3328204Z Initialized empty Git repository in /home/runner/work/retro-manager/retro-manager/.git/
+2026-09-27T05:15:07.3334158Z [command]/usr/bin/git remote add origin https://github.com/zephyr4289/retro-manager
+2026-09-27T05:15:07.3369444Z ##[endgroup]
+2026-09-27T05:15:07.3372042Z ##[group]Disabling automatic garbage collection
+2026-09-27T05:15:07.3374314Z [command]/usr/bin/git config --local gc.auto 0
+2026-09-27T05:15:07.3406818Z ##[endgroup]
+2026-09-27T05:15:07.3409310Z ##[group]Setting up auth
+2026-09-27T05:15:07.3413046Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-27T05:15:07.3448600Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-27T05:15:07.3879094Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-27T05:15:07.3920048Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-27T05:15:07.4144400Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-27T05:15:07.4183788Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-27T05:15:07.4409474Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-09-27T05:15:07.4450902Z ##[endgroup]
+2026-09-27T05:15:07.4453754Z ##[group]Fetching the repository
+2026-09-27T05:15:07.4464344Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +dce1923673b84d335e6e437478c1c84d15c2f942:refs/remotes/origin/main
+2026-09-27T05:15:08.0010989Z From https://github.com/zephyr4289/retro-manager
+2026-09-27T05:15:08.0012212Z  * [new ref]         dce1923673b84d335e6e437478c1c84d15c2f942 -> origin/main
+2026-09-27T05:15:08.0013519Z ##[endgroup]
+2026-09-27T05:15:08.0013972Z ##[group]Determining the checkout info
+2026-09-27T05:15:08.0014467Z ##[endgroup]
+2026-09-27T05:15:08.0014757Z [command]/usr/bin/git sparse-checkout disable
+2026-09-27T05:15:08.0070459Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-09-27T05:15:08.0103845Z ##[group]Checking out the ref
+2026-09-27T05:15:08.0108110Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-09-27T05:15:08.0640511Z Switched to a new branch 'main'
+2026-09-27T05:15:08.0646787Z branch 'main' set up to track 'origin/main'.
+2026-09-27T05:15:08.0656105Z ##[endgroup]
+2026-09-27T05:15:08.0700623Z [command]/usr/bin/git log -1 --format=%H
+2026-09-27T05:15:08.0728699Z dce1923673b84d335e6e437478c1c84d15c2f942
+2026-09-27T05:15:08.1029285Z ##[group]Run actions/setup-java@v5
+2026-09-27T05:15:08.1029659Z with:
+2026-09-27T05:15:08.1029914Z   distribution: temurin
+2026-09-27T05:15:08.1030192Z   java-version: 17
+2026-09-27T05:15:08.1030452Z   cache: gradle
+2026-09-27T05:15:08.1030699Z   java-package: jdk
+2026-09-27T05:15:08.1031037Z   check-latest: false
+2026-09-27T05:15:08.1031305Z   set-default: true
+2026-09-27T05:15:08.1031578Z   verify-signature: false
+2026-09-27T05:15:08.1031856Z   server-id: github
+2026-09-27T05:15:08.1032124Z   server-username: GITHUB_ACTOR
+2026-09-27T05:15:08.1032434Z   server-password: GITHUB_TOKEN
+2026-09-27T05:15:08.1032739Z   overwrite-settings: true
+2026-09-27T05:15:08.1033022Z   job-status: success
+2026-09-27T05:15:08.1035446Z   token: ***
+2026-09-27T05:15:08.1036036Z   show-download-progress: false
+2026-09-27T05:15:08.1036345Z env:
+2026-09-27T05:15:08.1036586Z   PERF_TOTAL_BUDGET_SEC: 600
+2026-09-27T05:15:08.1036879Z   PERF_CLASS_BUDGET_SEC: 120
+2026-09-27T05:15:08.1037158Z ##[endgroup]
+2026-09-27T05:15:08.2543921Z ##[group]Installed distributions
+2026-09-27T05:15:08.2614357Z Resolved Java 17.0.20+1 from tool-cache
+2026-09-27T05:15:08.2615180Z Setting Java 17.0.20+1 as the default
+2026-09-27T05:15:08.2625959Z Creating toolchains.xml for JDK version 17 from temurin
+2026-09-27T05:15:08.2702631Z Writing to /home/runner/.m2/toolchains.xml
+2026-09-27T05:15:08.2703208Z 
+2026-09-27T05:15:08.2703460Z Java configuration:
+2026-09-27T05:15:08.2704059Z   Distribution: temurin
+2026-09-27T05:15:08.2704668Z   Version: 17.0.20+1
+2026-09-27T05:15:08.2705486Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-09-27T05:15:08.2706237Z 
+2026-09-27T05:15:08.2706705Z ##[endgroup]
+2026-09-27T05:15:08.2742327Z Creating settings.xml with server-id: github
+2026-09-27T05:15:08.2751105Z Writing to /home/runner/.m2/settings.xml
+2026-09-27T05:15:08.2753931Z Configured MAVEN_ARGS to include -ntp to suppress Maven transfer progress logs. Set 'show-download-progress: true' to keep the download progress output.
+2026-09-27T05:15:08.5139610Z gradle cache is not found
+2026-09-27T05:15:08.7205872Z ##[group]Run gradle/actions/setup-gradle@v4
+2026-09-27T05:15:08.7206274Z with:
+2026-09-27T05:15:08.7206528Z   cache-disabled: false
+2026-09-27T05:15:08.7206813Z   cache-read-only: false
+2026-09-27T05:15:08.7207102Z   cache-write-only: false
+2026-09-27T05:15:08.7207412Z   cache-overwrite-existing: false
+2026-09-27T05:15:08.7207731Z   cache-cleanup: on-success
+2026-09-27T05:15:08.7208082Z   gradle-home-cache-includes: caches
+notifications
+
+2026-09-27T05:15:08.7208455Z   add-job-summary: always
+2026-09-27T05:15:08.7208760Z   add-job-summary-as-pr-comment: never
+2026-09-27T05:15:08.7209096Z   dependency-graph: disabled
+2026-09-27T05:15:08.7209452Z   dependency-graph-report-dir: dependency-graph-reports
+2026-09-27T05:15:08.7209871Z   dependency-graph-continue-on-failure: true
+2026-09-27T05:15:08.7210221Z   build-scan-publish: false
+2026-09-27T05:15:08.7210509Z   validate-wrappers: true
+2026-09-27T05:15:08.7210803Z   allow-snapshot-wrappers: false
+2026-09-27T05:15:08.7211175Z   gradle-home-cache-strict-match: false
+2026-09-27T05:15:08.7211514Z   workflow-job-context: null
+2026-09-27T05:15:08.7213955Z   github-token: ***
+2026-09-27T05:15:08.7214213Z env:
+2026-09-27T05:15:08.7214466Z   PERF_TOTAL_BUDGET_SEC: 600
+2026-09-27T05:15:08.7214767Z   PERF_CLASS_BUDGET_SEC: 120
+2026-09-27T05:15:08.7215167Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-09-27T05:15:08.7215856Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-09-27T05:15:08.7216483Z   MAVEN_ARGS: -ntp
+2026-09-27T05:15:08.7216781Z ##[endgroup]
+2026-09-27T05:15:10.2543421Z Merged default JDK locations into /home/runner/.m2/toolchains.xml
+2026-09-27T05:15:10.2545188Z Preparing cache for cleanup.
+2026-09-27T05:15:10.2549489Z ##[group]Restore Gradle state from cache
+2026-09-27T05:15:10.3172705Z Gradle User Home cache not found. Will initialize empty.
+2026-09-27T05:15:10.3174046Z ##[endgroup]
+2026-09-27T05:15:10.3396801Z ##[group]All Gradle Wrapper jars are valid
+2026-09-27T05:15:10.3398267Z ✓ Found known Gradle Wrapper JAR files:
+2026-09-27T05:15:10.3399325Z   cb0da6751c2b753a16ac168bb354870ebb1e162e9083f116729cec9c781156b8 gradle/wrapper/gradle-wrapper.jar
+2026-09-27T05:15:10.3400594Z ##[endgroup]
+2026-09-27T05:15:10.3542312Z ##[group]Run chmod +x gradlew
+2026-09-27T05:15:10.3542669Z [36;1mchmod +x gradlew[0m
+2026-09-27T05:15:10.3863142Z shell: /usr/bin/bash -e {0}
+2026-09-27T05:15:10.3863511Z env:
+2026-09-27T05:15:10.3863803Z   PERF_TOTAL_BUDGET_SEC: 600
+2026-09-27T05:15:10.3864196Z   PERF_CLASS_BUDGET_SEC: 120
+2026-09-27T05:15:10.3864710Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-09-27T05:15:10.3865428Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-09-27T05:15:10.3866297Z   MAVEN_ARGS: -ntp
+2026-09-27T05:15:10.3866647Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+2026-09-27T05:15:10.3867081Z   GRADLE_USER_HOME: /home/runner/.gradle
+2026-09-27T05:15:10.3867507Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+2026-09-27T05:15:10.3867924Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+2026-09-27T05:15:10.3868549Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+2026-09-27T05:15:10.3869269Z   DEVELOCITY_INJECTION_CUSTOM_VALUE: gradle-actions
+2026-09-27T05:15:10.3869721Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+2026-09-27T05:15:10.3870092Z ##[endgroup]
+2026-09-27T05:15:10.4023478Z ##[group]Run env -u ANDROID_HOME -u ANDROID_SDK_ROOT ./gradlew :core:test --no-daemon --stacktrace
+2026-09-27T05:15:10.4024200Z [36;1menv -u ANDROID_HOME -u ANDROID_SDK_ROOT ./gradlew :core:test --no-daemon --stacktrace[0m
+2026-09-27T05:15:10.4084262Z shell: /usr/bin/bash -e {0}
+2026-09-27T05:15:10.4084599Z env:
+2026-09-27T05:15:10.4084886Z   PERF_TOTAL_BUDGET_SEC: 600
+2026-09-27T05:15:10.4085209Z   PERF_CLASS_BUDGET_SEC: 120
+2026-09-27T05:15:10.4085883Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-09-27T05:15:10.4086560Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-09-27T05:15:10.4087081Z   MAVEN_ARGS: -ntp
+2026-09-27T05:15:10.4087406Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+2026-09-27T05:15:10.4087813Z   GRADLE_USER_HOME: /home/runner/.gradle
+2026-09-27T05:15:10.4088191Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+2026-09-27T05:15:10.4088579Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+2026-09-27T05:15:10.4089175Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+2026-09-27T05:15:10.4089797Z   DEVELOCITY_INJECTION_CUSTOM_VALUE: gradle-actions
+2026-09-27T05:15:10.4090221Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+2026-09-27T05:15:10.4090564Z ##[endgroup]
+2026-09-27T05:15:10.8482730Z Downloading https://services.gradle.org/distributions/gradle-9.5.1-bin.zip
+2026-09-27T05:15:13.5469240Z .............10%.............20%..............30%.............40%.............50%..............60%.............70%..............80%.............90%.............100%
+2026-09-27T05:15:14.9768614Z 
+2026-09-27T05:15:14.9769627Z Welcome to Gradle 9.5.1!
+2026-09-27T05:15:14.9770554Z 
+2026-09-27T05:15:14.9779304Z Here are the highlights of this release:
+2026-09-27T05:15:14.9781337Z  - Task provenance in reports and failure messages
+2026-09-27T05:15:14.9783284Z  - Type-safe accessors for precompiled Kotlin Settings plugins
+2026-09-27T05:15:14.9784161Z 
+2026-09-27T05:15:14.9785448Z For more details see https://docs.gradle.org/9.5.1/release-notes.html
+2026-09-27T05:15:14.9786477Z 
+2026-09-27T05:15:15.0767668Z To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.5.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+2026-09-27T05:15:16.3774143Z Daemon will be stopped at the end of the build 
+2026-09-27T05:16:07.7770577Z 
+2026-09-27T05:16:07.7826571Z > Configure project :app
+2026-09-27T05:16:07.7846329Z w: file:///home/runner/work/retro-manager/retro-manager/app/build.gradle.kts:39:5: 'fun BaseAppModuleExtension.kotlinOptions(configure: Action<KotlinJvmOptions>): Unit' is deprecated. The kotlinOptions types are deprecated, please migrate to the compilerOptions types. More details are here: https://kotl.in/u1r8ln.
+2026-09-27T05:16:19.3780845Z 
+2026-09-27T05:16:19.3781545Z > Task :core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-09-27T05:16:25.0766151Z > Task :core:processResources NO-SOURCE
+2026-09-27T05:16:25.0796696Z > Task :core:processTestResources NO-SOURCE
+2026-09-27T05:16:39.7760977Z 
+2026-09-27T05:16:39.7767455Z > Task :core:compileKotlin
+2026-09-27T05:16:39.7769264Z w: file:///home/runner/work/retro-manager/retro-manager/core/src/main/kotlin/com/retropack/domain/rom/ArchiveExtractor.kt:281:62 'var fileNameW: String!' is deprecated. Deprecated in Java.
+2026-09-27T05:16:39.7772001Z w: file:///home/runner/work/retro-manager/retro-manager/core/src/main/kotlin/com/retropack/domain/rom/ArchiveExtractor.kt:332:9 'constructor(p0: SeekableByteChannel!): SevenZFile' is deprecated. Deprecated in Java.
+2026-09-27T05:16:39.7774796Z w: file:///home/runner/work/retro-manager/retro-manager/core/src/main/kotlin/com/retropack/domain/rom/ArchiveExtractor.kt:371:9 'constructor(p0: File!): SevenZFile' is deprecated. Deprecated in Java.
+2026-09-27T05:16:39.8776203Z 
+2026-09-27T05:16:39.8806615Z > Task :core:compileJava NO-SOURCE
+2026-09-27T05:16:39.8807864Z > Task :core:classes UP-TO-DATE
+2026-09-27T05:16:39.8826090Z > Task :core:jar
+2026-09-27T05:16:45.2786858Z > Task :core:compileTestKotlin
+2026-09-27T05:16:45.2816383Z > Task :core:compileTestJava NO-SOURCE
+2026-09-27T05:16:45.2816918Z > Task :core:testClasses UP-TO-DATE
+2026-09-27T05:16:47.2764529Z 
+2026-09-27T05:16:47.2773449Z > Task :core:test
+2026-09-27T05:16:47.2788042Z 
+2026-09-27T05:16:47.2788788Z ArchiveExtractorTest > isArchive correctly detects ZIP and GZIP magic bytes and extensions() PASSED
+2026-09-27T05:16:47.2789543Z 
+2026-09-27T05:16:47.2790089Z ArchiveExtractorTest > SUPPORTED_ROM_EXTENSIONS contains all 10 console architectures() PASSED
+2026-09-27T05:16:47.2790830Z 
+2026-09-27T05:16:47.3803024Z ArchiveExtractorTest > extractCandidateRom unpacks ZIP containing GBA ROM and ignores metadata() PASSED
+2026-09-27T05:16:47.3803931Z 
+2026-09-27T05:16:47.3866651Z ArchiveExtractorTest > extractCandidateRom handles nested ZIP archives recursively() PASSED
+2026-09-27T05:16:47.3867378Z 
+2026-09-27T05:16:47.3868018Z ArchiveExtractorTest > selectBestEntry prioritizes explicit console extensions over generic bin() PASSED
+2026-09-27T05:16:47.3868829Z 
+2026-09-27T05:16:47.3869262Z ArchiveExtractorTest > extractCandidateRom decompresses GZIP stream() PASSED
+2026-09-27T05:16:47.3869872Z 
+2026-09-27T05:16:47.3870308Z GbRomParserTest > test valid Game Boy Color header parsing with battery SRAM() PASSED
+2026-09-27T05:16:47.3870919Z 
+2026-09-27T05:16:47.3871269Z GbRomParserTest > test corrupted header checksum detection() PASSED
+2026-09-27T05:16:47.3871775Z 
+2026-09-27T05:16:47.3872141Z GbRomParserTest > test valid Game Boy monochrome header parsing() PASSED
+2026-09-27T05:16:47.3872682Z 
+2026-09-27T05:16:47.3873272Z GbRomParserTest > test file too small throws InvalidRomException() PASSED
+2026-09-27T05:16:47.3905909Z 
+2026-09-27T05:16:47.3936431Z GbRomParserTest > test corrupted Nintendo logo detection() PASSED
+2026-09-27T05:16:47.3963456Z 
+2026-09-27T05:16:47.3986542Z GbaRomParserTest > test rejection of invalid fixed-value byte() PASSED
+2026-09-27T05:16:47.4015974Z 
+2026-09-27T05:16:47.4046491Z GbaRomParserTest > test file too small throws InvalidRomException() PASSED
+2026-09-27T05:16:47.4075950Z 
+2026-09-27T05:16:47.4106470Z GbaRomParserTest > test header checksum recalculation and mismatch detection() PASSED
+2026-09-27T05:16:47.4107159Z 
+2026-09-27T05:16:47.4107759Z GbaRomParserTest > test valid GBA header parsing with known game code and maker code() PASSED
+2026-09-27T05:16:47.4136216Z 
+2026-09-27T05:16:47.4166552Z GenesisRomParserTest > test Genesis Mega Drive ROM detection and parsing() PASSED
+2026-09-27T05:16:47.4167756Z 
+2026-09-27T05:16:47.4168190Z IpsUpsPatcherTest > test UPS patch rejects mismatched base ROM CRC() PASSED
+2026-09-27T05:16:47.4168778Z 
+2026-09-27T05:16:47.4169179Z IpsUpsPatcherTest > test UPS inspection and XOR patch application() PASSED
+2026-09-27T05:16:47.4169769Z 
+2026-09-27T05:16:47.4170424Z IpsUpsPatcherTest > test streaming patch application produces identical result to in-memory application() PASSED
+2026-09-27T05:16:47.4171287Z 
+2026-09-27T05:16:47.4171698Z IpsUpsPatcherTest > test IPS literal and RLE record application() PASSED
+2026-09-27T05:16:47.4172254Z 
+2026-09-27T05:16:47.4172545Z IpsUpsPatcherTest > test IPS truncation record() PASSED
+2026-09-27T05:16:47.4172972Z 
+2026-09-27T05:16:47.4173354Z IpsUpsPatcherTest > test rejection of unknown patch signature() PASSED
+2026-09-27T05:16:47.4777671Z 
+2026-09-27T05:16:47.4790013Z MultiPlatformRomParserTest > test Genesis ROM auto-detection via unified RomParser() PASSED
+2026-09-27T05:16:47.4790457Z 
+2026-09-27T05:16:47.4790742Z MultiPlatformRomParserTest > test N64 ROM auto-detection via unified RomParser() PASSED
+2026-09-27T05:16:47.4791132Z 
+2026-09-27T05:16:47.4791373Z MultiPlatformRomParserTest > test NES ROM auto-detection via unified RomParser() PASSED
+2026-09-27T05:16:47.4791711Z 
+2026-09-27T05:16:47.4792027Z MultiPlatformRomParserTest > test extension fallback for unheadered homebrews and disc formats() PASSED
+2026-09-27T05:16:47.4792438Z 
+2026-09-27T05:16:47.4793002Z MultiPlatformRomParserTest > test SNES ROM auto-detection via unified RomParser() PASSED
+2026-09-27T05:16:47.4793356Z 
+2026-09-27T05:16:47.4793600Z MultiPlatformRomParserTest > test NDS ROM auto-detection via unified RomParser() PASSED
+2026-09-27T05:16:47.4793930Z 
+2026-09-27T05:16:47.4794171Z NesRomParserTest > test iNES header parsing with MMC1 mapper and battery() PASSED
+2026-09-27T05:16:47.4794496Z 
+2026-09-27T05:16:47.4794724Z RomParserTest > test digit-leading title gets g_ prefixed package segment() PASSED
+2026-09-27T05:16:47.4795041Z 
+2026-09-27T05:16:47.4795282Z RomParserTest > test GBA checksum match with bad fixed byte falls through to GB() PASSED
+2026-09-27T05:16:47.4795780Z 
+2026-09-27T05:16:47.4796020Z RomParserTest > test auto-detection and identity generation for GBA ROM() PASSED
+2026-09-27T05:16:47.4796336Z 
+2026-09-27T05:16:47.4796553Z RomParserTest > test auto-detection and identity generation for GBC ROM() PASSED
+2026-09-27T05:16:47.4796861Z 
+2026-09-27T05:16:47.4797084Z RomParserTest > test auto-detection and identity generation for GB ROM() PASSED
+2026-09-27T05:16:47.4797394Z 
+2026-09-27T05:16:47.4797606Z RomParserTest > test unidentifiable data throws InvalidRomException() PASSED
+2026-09-27T05:16:47.4797909Z 
+2026-09-27T05:16:47.4798584Z SnesRomParserTest > test HiROM parsing with 512-byte copier header() PASSED
+2026-09-27T05:16:47.4799063Z 
+2026-09-27T05:16:47.4799568Z SnesRomParserTest > test LoROM parsing without copier header() PASSED
+2026-09-27T05:16:47.4801816Z 
+2026-09-27T05:16:47.4802566Z StreamChecksumTest > test standard ASCII test vector() PASSED
+2026-09-27T05:16:47.5790104Z 
+2026-09-27T05:16:47.5827921Z StreamChecksumTest > test file checksum calculation(File) PASSED
+2026-09-27T05:16:47.5856101Z 
+2026-09-27T05:16:47.5906905Z StreamChecksumTest > test multi-chunk stream exceeding 64 KB buffer boundary() PASSED
+2026-09-27T05:16:47.5917729Z 
+2026-09-27T05:16:47.5968504Z StreamChecksumTest > test empty byte array checksums() PASSED
+2026-09-27T05:16:47.5976093Z 
+2026-09-27T05:16:47.5988110Z RuntimeBundleIntegrityTest > pinned bundle files exist() PASSED
+2026-09-27T05:16:47.6015973Z 
+2026-09-27T05:16:47.6046765Z RuntimeBundleIntegrityTest > descriptor entry names match the real native library produced by the NDK build() PASSED
+2026-09-27T05:16:47.6053760Z 
+2026-09-27T05:16:47.6076721Z RuntimeBundleIntegrityTest > compiled-in descriptor and descriptor file agree in lockstep() PASSED
+2026-09-27T05:16:47.6105102Z 
+2026-09-27T05:16:47.6106651Z RuntimeBundleIntegrityTest > descriptor file protected entries match actual template apk entries() PASSED
+2026-09-27T05:16:47.6136130Z 
+2026-09-27T05:16:47.6161346Z RuntimeBundleIntegrityTest > template apk digest matches compiled-in TRUSTED_TEMPLATES anchor() PASSED
+2026-09-27T05:16:47.6174706Z 
+2026-09-27T05:16:47.6175559Z RuntimeBundleIntegrityTest > loadFromDirectory registers the template retrievable via getTemplate() PASSED
+2026-09-27T05:16:47.6177009Z 
+2026-09-27T05:16:47.6177920Z RuntimeBundleIntegrityTest > tampered template fails verification (guard against weakening the gate)() PASSED
+2026-09-27T05:16:47.6772434Z 
+2026-09-27T05:16:47.6777357Z RuntimeDescriptorTest > all 10 canonical runtime descriptors have valid configurations() PASSED
+2026-09-27T05:16:47.6782596Z 
+2026-09-27T05:16:47.6783394Z RuntimeDescriptorTest > roundtrip serialization preserves descriptor structure() PASSED
+2026-09-27T05:16:47.6784209Z 
+2026-09-27T05:16:47.6784794Z RuntimeDescriptorTest > parses canonical runtime descriptor correctly() PASSED
+2026-09-27T05:16:47.6785557Z 
+2026-09-27T05:16:47.6786513Z RuntimeProvisionerTest > detects whole-APK digest mismatch against the trust anchor() PASSED
+2026-09-27T05:16:47.6787391Z 
+2026-09-27T05:16:47.6788207Z RuntimeProvisionerTest > protected-entry mismatch is reported as integrity failure with entry context() PASSED
+2026-09-27T05:16:47.6789167Z 
+2026-09-27T05:16:47.6789789Z RuntimeProvisionerTest > re-registers a cached bundle and skips re-extraction() PASSED
+2026-09-27T05:16:47.6790588Z 
+2026-09-27T05:16:47.6791668Z RuntimeProvisionerTest > extracts nested bundle recursively and registers the template() PASSED
+2026-09-27T05:16:47.6792602Z 
+2026-09-27T05:16:47.6793152Z RuntimeProvisionerTest > re-extracts zero-byte stale files() PASSED
+2026-09-27T05:16:47.6793815Z 
+2026-09-27T05:16:47.6794573Z RuntimeProvisionerTest > reports MissingTemplate with actionable guidance when bundle asset is absent() PASSED
+2026-09-27T05:16:47.6795546Z 
+2026-09-27T05:16:47.6797003Z RuntimeProvisionerTest > reports ExtractionFailure instead of swallowing a malformed descriptor() PASSED
+2026-09-27T05:16:47.6797754Z 
+2026-09-27T05:16:47.6798269Z RuntimeProvisionerTest > empty asset container yields MissingTemplate without throwing() PASSED
+2026-09-27T05:16:47.6798926Z 
+2026-09-27T05:16:47.6799395Z RuntimeRegistryTest > discovers canonical runtimes for all 10 retro console systems() PASSED
+2026-09-27T05:16:47.6800030Z 
+2026-09-27T05:16:47.6800466Z RuntimeRegistryTest > registers and retrieves all 10 canonical descriptors by ID() PASSED
+2026-09-27T05:16:47.6801081Z 
+2026-09-27T05:16:47.6801761Z RuntimeRegistryTest > verifyProtectedEntries validates classes dex and native library against bytecode trust anchors() PASSED
+2026-09-27T05:16:47.6802511Z 
+2026-09-27T05:16:47.6802785Z RuntimeRegistryTest > isTrustedTemplate validates compiled bytecode fingerprint() PASSED
+2026-09-27T05:16:47.6803142Z 
+2026-09-27T05:16:47.6803402Z RuntimeRegistryTest > loads runtime bundle from directory and registers template() PASSED
+2026-09-27T05:16:47.6803912Z 
+2026-09-27T05:16:47.6804219Z RuntimeTemplateTest > verifyProtectedEntries fails closed when protected entry is tampered() PASSED
+2026-09-27T05:16:47.6804676Z 
+2026-09-27T05:16:47.6804954Z RuntimeTemplateTest > verifyProtectedEntries succeeds when digests match() PASSED
+2026-09-27T05:16:47.6805280Z 
+2026-09-27T05:16:47.6805565Z RuntimeTemplateTest > template apk exists and passes integrity check against trusted hash() PASSED
+2026-09-27T05:16:47.6806495Z 
+2026-09-27T05:16:47.6807103Z AlignmentVerifierTest > test assertCompliant passes on compliant archive and fails on unaligned() PASSED
+2026-09-27T05:16:47.6807883Z 
+2026-09-27T05:16:47.6808274Z AlignmentVerifierTest > test non-existent file throws exception() PASSED
+2026-09-27T05:16:47.6808842Z 
+2026-09-27T05:16:47.6809226Z AlignmentVerifierTest > test report on empty or non-native zip() PASSED
+2026-09-27T05:16:48.2759755Z 
+2026-09-27T05:16:48.2777391Z ApkSignerAndVerificationTest > test tampered signed APK fails verification() PASSED
+2026-09-27T05:16:48.3758935Z 
+2026-09-27T05:16:48.3761305Z ApkSignerAndVerificationTest > test single-pass v1 v2 v3 signing and verification with RSA key() PASSED
+2026-09-27T05:16:48.4768730Z 
+2026-09-27T05:16:48.4777389Z ApkSignerAndVerificationTest > test single-pass v1 v2 v3 signing and verification with EC P-256 key() PASSED
+2026-09-27T05:16:48.4802315Z 
+2026-09-27T05:16:48.4826752Z AxmlMutatorTest > mutate fails when activity name has no package qualifier() PASSED
+2026-09-27T05:16:48.4827536Z 
+2026-09-27T05:16:48.4828229Z AxmlMutatorTest > mutate updates package name label versionCode and versionName() PASSED
+2026-09-27T05:16:48.4829095Z 
+2026-09-27T05:16:48.4829681Z AxmlMutatorTest > mutate fails when extractNativeLibs attribute is absent() PASSED
+2026-09-27T05:16:48.4830434Z 
+2026-09-27T05:16:48.4831177Z AxmlMutatorTest > mutate fails with IllegalStateException when activity uses shorthand relative name() PASSED
+2026-09-27T05:16:48.4832120Z 
+2026-09-27T05:16:48.4835429Z AxmlMutatorTest > mutate fails with IllegalStateException when extractNativeLibs is true() PASSED
+2026-09-27T05:16:48.6758806Z 
+2026-09-27T05:16:48.6762555Z BuildEngineTest > test complete 15-step transformation pipeline with GBA rom() PASSED
+2026-09-27T05:16:48.6763441Z 
+2026-09-27T05:16:48.6764012Z BuildEngineTest > test build fails cleanly on empty ROM() PASSED
+2026-09-27T05:16:48.7758700Z 
+2026-09-27T05:16:48.7764748Z BuildEngineTest > test build fails on missing template() PASSED
+2026-09-27T05:16:48.7766193Z 
+2026-09-27T05:16:48.7767718Z BuildEngineTest > test template hash skip decision honors identity match only() PASSED
+2026-09-27T05:16:48.9759117Z 
+2026-09-27T05:16:48.9760527Z BuildEngineTest > test precomputed checksums path matches default build outputs() PASSED
+2026-09-27T05:16:48.9761409Z 
+2026-09-27T05:16:48.9771900Z BuildTerminalReporterTest > genuine success renders the complete banner with real artifact path() PASSED
+2026-09-27T05:16:48.9772380Z 
+2026-09-27T05:16:48.9772738Z BuildTerminalReporterTest > success marked result pointing at missing file is rendered as failure() PASSED
+2026-09-27T05:16:48.9773188Z 
+2026-09-27T05:16:48.9773437Z BuildTerminalReporterTest > abort summary never claims completion() PASSED
+2026-09-27T05:16:48.9773807Z 
+2026-09-27T05:16:48.9774146Z BuildTerminalReporterTest > success marked result without artifact file is rendered as failure() PASSED
+2026-09-27T05:16:48.9774589Z 
+2026-09-27T05:16:48.9774885Z BuildTerminalReporterTest > failure summary defaults null error to explicit message() PASSED
+2026-09-27T05:16:48.9775286Z 
+2026-09-27T05:16:48.9775852Z BuildTerminalReporterTest > failed result never renders success banner or verification claims() PASSED
+2026-09-27T05:16:49.3758890Z 
+2026-09-27T05:16:49.3764498Z HomebrewConformanceTest > conformance test 3 - Game Boy Advance Anguna Warriors of the Demis() PASSED
+2026-09-27T05:16:49.4786356Z 
+2026-09-27T05:16:49.4807242Z HomebrewConformanceTest > conformance test 1 - Game Boy Tobu Tobu Girl Deluxe() PASSED
+2026-09-27T05:16:49.4808167Z 
+2026-09-27T05:16:49.4808825Z HomebrewConformanceTest > conformance test 2 - Game Boy Color Dangan GB() PASSED
+2026-09-27T05:16:49.5759197Z 
+2026-09-27T05:16:49.5760332Z IconInjectorTest > validatePng rejects invalid headers or short byte arrays() PASSED
+2026-09-27T05:16:49.5761224Z 
+2026-09-27T05:16:49.5762081Z IconInjectorTest > prepareIconEntries maps foreground and optional background correctly() PASSED
+2026-09-27T05:16:49.5763029Z 
+2026-09-27T05:16:49.5772629Z IconInjectorTest > prepareIconEntries works with foreground only() PASSED
+2026-09-27T05:16:49.5773413Z 
+2026-09-27T05:16:49.5773971Z IconInjectorTest > validatePng succeeds on valid png header() PASSED
+2026-09-27T05:16:49.5774674Z 
+2026-09-27T05:16:49.5775339Z PackageIdentityTest > createWithHash reuses precomputed digest without rehashing rom() PASSED
+2026-09-27T05:16:49.5776424Z 
+2026-09-27T05:16:49.5777093Z PackageIdentityTest > validatePackageName accepts valid Android package identifiers() PASSED
+2026-09-27T05:16:49.5777931Z 
+2026-09-27T05:16:49.5778530Z PackageIdentityTest > slug sanitization handles punctuation and spaces() PASSED
+2026-09-27T05:16:49.5779267Z 
+2026-09-27T05:16:49.5780615Z PackageIdentityTest > slug sanitization prefixes numeric first character with g_() PASSED
+2026-09-27T05:16:49.5781427Z 
+2026-09-27T05:16:49.5781980Z PackageIdentityTest > validatePackageName rejects invalid formats() PASSED
+2026-09-27T05:16:49.5782697Z 
+2026-09-27T05:16:49.5783309Z PackageIdentityTest > same rom bytes and title produce identical package identity() PASSED
+2026-09-27T05:16:49.5784089Z 
+2026-09-27T05:16:49.5784730Z PackageIdentityTest > different rom bytes produce different hash10 and package names() PASSED
+2026-09-27T05:16:49.5785533Z 
+2026-09-27T05:16:49.5786390Z PackageIdentityTest > creates deterministic package name from game title and rom hash() PASSED
+2026-09-27T05:16:49.5787538Z 
+2026-09-27T05:16:49.5788122Z PackageIdentityTest > slug sanitization falls back to game when empty() PASSED
+2026-09-27T05:16:49.5788850Z 
+2026-09-27T05:16:49.5789619Z ProtectedEntriesVerifierTest > verifyApk validates the real pinned runtime template descriptor() PASSED
+2026-09-27T05:16:49.5790548Z 
+2026-09-27T05:16:49.5791408Z ProtectedEntriesVerifierTest > verifyEntries accepts uppercase SHA256-prefixed and whitespace-padded digests() PASSED
+2026-09-27T05:16:49.5792419Z 
+2026-09-27T05:16:49.5793201Z ProtectedEntriesVerifierTest > verifyEntries throws SecurityException when protected entry is missing() PASSED
+2026-09-27T05:16:49.5794144Z 
+2026-09-27T05:16:49.5795154Z ProtectedEntriesVerifierTest > verifyEntries throws SecurityException when protected entry is tampered() PASSED
+2026-09-27T05:16:49.5796363Z 
+2026-09-27T05:16:49.5797048Z ProtectedEntriesVerifierTest > matchesDigest still rejects mismatching prefixed digests() PASSED
+2026-09-27T05:16:49.5797915Z 
+2026-09-27T05:16:49.5798591Z ProtectedEntriesVerifierTest > verifyEntries accepts sha256-prefixed declared digests() PASSED
+2026-09-27T05:16:49.5799443Z 
+2026-09-27T05:16:49.5800055Z ProtectedEntriesVerifierTest > verifyEntries succeeds when all digests match() PASSED
+2026-09-27T05:16:49.5800830Z 
+2026-09-27T05:16:49.5801427Z RomAssetInjectorTest > sanitizeEntryPath rejects path traversal sequences() PASSED
+2026-09-27T05:16:49.5802203Z 
+2026-09-27T05:16:49.5802750Z RomAssetInjectorTest > empty rom bytes or blank json throws exception() PASSED
+2026-09-27T05:16:49.5803470Z 
+2026-09-27T05:16:49.5804052Z RomAssetInjectorTest > prepares correct asset entries for rom and config() PASSED
+2026-09-27T05:16:49.5804782Z 
+2026-09-27T05:16:49.5805489Z ScratchAllocatorTest > atomicFinalize renames scratch file to target and replaces existing() PASSED
+2026-09-27T05:16:49.5806556Z 
+2026-09-27T05:16:49.5807129Z ScratchAllocatorTest > allocates scratch file in same directory as target() PASSED
+2026-09-27T05:16:49.5807868Z 
+2026-09-27T05:16:49.5808361Z ScratchAllocatorTest > detects signature residue correctly() PASSED
+2026-09-27T05:16:49.5809085Z 
+2026-09-27T05:16:49.5809796Z ZipArchiveTransformerTest > test transform aligns so files to 16KB and strips signature residue() PASSED
+2026-09-27T05:16:49.5810725Z 
+2026-09-27T05:16:49.5811323Z HybridKeystoreTest > test EC P-256 identity generation and certificate validity() PASSED
+2026-09-27T05:16:49.7758921Z 
+2026-09-27T05:16:49.7759639Z HybridKeystoreTest > test encrypted persistence at rest roundtrip(File) PASSED
+2026-09-27T05:16:49.7760298Z 
+2026-09-27T05:16:49.7760679Z HybridKeystoreTest > test RSA-2048 identity generation and certificate validity() PASSED
+2026-09-27T05:16:49.7761131Z 
+2026-09-27T05:16:49.7761484Z HybridKeystoreTest > test corrupt payload sizes rejected without large allocation() PASSED
+2026-09-27T05:16:49.9768723Z 
+2026-09-27T05:16:49.9787317Z HybridKeystoreTest > test PKCS12 password-protected export and re-import() PASSED
+2026-09-27T05:16:50.2760873Z gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_2-1790486120391.json
+2026-09-27T05:16:50.2761711Z 
+2026-09-27T05:16:50.2762508Z [Incubating] Problems report is available at: file:///home/runner/work/retro-manager/retro-manager/build/reports/problems/problems-report.html
+2026-09-27T05:16:50.2763496Z 
+2026-09-27T05:16:50.2764336Z Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+2026-09-27T05:16:50.2764989Z 
+2026-09-27T05:16:50.2766012Z You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+2026-09-27T05:16:50.2766922Z 
+2026-09-27T05:16:50.2767816Z For more on this, please refer to https://docs.gradle.org/9.5.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+2026-09-27T05:16:50.2768953Z 
+2026-09-27T05:16:50.2769663Z BUILD SUCCESSFUL in 1m 39s
+2026-09-27T05:16:50.2770106Z 4 actionable tasks: 4 executed
+2026-09-27T05:16:50.2771116Z Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.5.1/userguide/configuration_cache_enabling.html
+2026-09-27T05:16:50.6343051Z ##[group]Run actions/upload-artifact@v4
+2026-09-27T05:16:50.6343363Z with:
+2026-09-27T05:16:50.6343554Z   name: junit-core
+2026-09-27T05:16:50.6343787Z   path: core/build/test-results/test/*.xml
+
+2026-09-27T05:16:50.6344092Z   if-no-files-found: error
+2026-09-27T05:16:50.6344320Z   retention-days: 30
+2026-09-27T05:16:50.6344531Z   compression-level: 6
+2026-09-27T05:16:50.6344738Z   overwrite: false
+2026-09-27T05:16:50.6344944Z   include-hidden-files: false
+2026-09-27T05:16:50.6345171Z env:
+2026-09-27T05:16:50.6345353Z   PERF_TOTAL_BUDGET_SEC: 600
+2026-09-27T05:16:50.6345872Z   PERF_CLASS_BUDGET_SEC: 120
+2026-09-27T05:16:50.6346324Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-09-27T05:16:50.6346821Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-09-27T05:16:50.6347196Z   MAVEN_ARGS: -ntp
+2026-09-27T05:16:50.6347433Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+2026-09-27T05:16:50.6347758Z   GRADLE_USER_HOME: /home/runner/.gradle
+2026-09-27T05:16:50.6348042Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+2026-09-27T05:16:50.6348331Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+2026-09-27T05:16:50.6348762Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+2026-09-27T05:16:50.6349226Z   DEVELOCITY_INJECTION_CUSTOM_VALUE: gradle-actions
+2026-09-27T05:16:50.6349535Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+2026-09-27T05:16:50.6349790Z ##[endgroup]
+2026-09-27T05:16:50.8107286Z (node:2714) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-09-27T05:16:50.8108147Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-09-27T05:16:50.8221498Z With the provided path, there will be 28 files uploaded
+2026-09-27T05:16:50.8228562Z Artifact name is valid!
+2026-09-27T05:16:50.8229081Z Root directory input is valid!
+2026-09-27T05:16:51.0289266Z Beginning upload of artifact content to blob storage
+2026-09-27T05:16:51.0858180Z (node:2714) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-09-27T05:16:51.1115157Z Uploaded bytes 16598
+2026-09-27T05:16:51.1275883Z Finished uploading artifact content to blob storage!
+2026-09-27T05:16:51.1277565Z SHA256 digest of uploaded artifact zip is 4e357a0eff7fc737d01367ec2f99673f9587965234878d0f7b34e574d1792779
+2026-09-27T05:16:51.1279270Z Finalizing artifact upload
+2026-09-27T05:16:51.3227155Z Artifact junit-core.zip successfully finalized. Artifact ID 10923699769
+2026-09-27T05:16:51.3229252Z Artifact junit-core has been successfully uploaded! Final size is 16598 bytes. Artifact ID is 10923699769
+2026-09-27T05:16:51.3236953Z Artifact download URL: https://github.com/zephyr4289/retro-manager/actions/runs/36296625075/artifacts/10923699769
+2026-09-27T05:16:51.3399823Z ##[group]Run actions/upload-artifact@v4
+2026-09-27T05:16:51.3400130Z with:
+2026-09-27T05:16:51.3400335Z   name: test-reports-core
+2026-09-27T05:16:51.3400585Z   path: core/build/reports/tests
+
+2026-09-27T05:16:51.3400849Z   if-no-files-found: warn
+2026-09-27T05:16:51.3401250Z   retention-days: 30
+2026-09-27T05:16:51.3401463Z   compression-level: 6
+2026-09-27T05:16:51.3401679Z   overwrite: false
+2026-09-27T05:16:51.3401906Z   include-hidden-files: false
+2026-09-27T05:16:51.3402141Z env:
+2026-09-27T05:16:51.3402331Z   PERF_TOTAL_BUDGET_SEC: 600
+2026-09-27T05:16:51.3402566Z   PERF_CLASS_BUDGET_SEC: 120
+2026-09-27T05:16:51.3402915Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-09-27T05:16:51.3403406Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-09-27T05:16:51.3403785Z   MAVEN_ARGS: -ntp
+2026-09-27T05:16:51.3404033Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+2026-09-27T05:16:51.3404362Z   GRADLE_USER_HOME: /home/runner/.gradle
+2026-09-27T05:16:51.3404650Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+2026-09-27T05:16:51.3404946Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+2026-09-27T05:16:51.3405379Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+2026-09-27T05:16:51.3406205Z   DEVELOCITY_INJECTION_CUSTOM_VALUE: gradle-actions
+2026-09-27T05:16:51.3406522Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+2026-09-27T05:16:51.3406782Z ##[endgroup]
+2026-09-27T05:16:51.5054528Z (node:2726) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-09-27T05:16:51.5055323Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-09-27T05:16:51.5276491Z With the provided path, there will be 32 files uploaded
+2026-09-27T05:16:51.5282228Z Artifact name is valid!
+2026-09-27T05:16:51.5282898Z Root directory input is valid!
+2026-09-27T05:16:51.7272791Z Beginning upload of artifact content to blob storage
+2026-09-27T05:16:51.7812544Z (node:2726) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-09-27T05:16:51.8038699Z Uploaded bytes 36397
+2026-09-27T05:16:51.8179607Z Finished uploading artifact content to blob storage!
+2026-09-27T05:16:51.8180656Z SHA256 digest of uploaded artifact zip is b8e4a38ea139f6178d2103c5b01e9ed68e97fcd6276109c1baa273169bf5125d
+2026-09-27T05:16:51.8182527Z Finalizing artifact upload
+2026-09-27T05:16:52.0089124Z Artifact test-reports-core.zip successfully finalized. Artifact ID 10924690239
+2026-09-27T05:16:52.0091015Z Artifact test-reports-core has been successfully uploaded! Final size is 36397 bytes. Artifact ID is 10924690239
+2026-09-27T05:16:52.0098464Z Artifact download URL: https://github.com/zephyr4289/retro-manager/actions/runs/36296625075/artifacts/10924690239
+2026-09-27T05:16:52.0335362Z Post job cleanup.
+2026-09-27T05:16:52.2717902Z In post-action step
+2026-09-27T05:16:52.2730851Z ##[group]Stopping Gradle daemons
+2026-09-27T05:16:52.2731919Z Stopping Gradle daemons for /home/runner/.gradle/wrapper/dists/gradle-9.5.1-bin/iq79hdu3mqx29lgffhp8bfmx/gradle-9.5.1
+2026-09-27T05:16:52.2750998Z [command]/home/runner/.gradle/wrapper/dists/gradle-9.5.1-bin/iq79hdu3mqx29lgffhp8bfmx/gradle-9.5.1/bin/gradle --stop
+2026-09-27T05:16:52.8958949Z No Gradle daemons are running.
+2026-09-27T05:16:52.9080904Z ##[endgroup]
+2026-09-27T05:16:52.9110188Z ##[group]Provision Gradle >= 9.5.1
+2026-09-27T05:16:56.0638390Z Gradle version 9.7.1 is available at /usr/bin/gradle and >= 9.5.1. Not installing.
+2026-09-27T05:16:56.0639520Z ##[endgroup]
+2026-09-27T05:16:56.0642391Z ##[group]Executing Gradle to clean up caches
+2026-09-27T05:16:56.0642992Z Cleaning up caches last used before 1790486110254
+2026-09-27T05:16:56.0646950Z [command]/usr/bin/gradle -g /home/runner/.gradle -I init.gradle --info --no-daemon --no-scan --build-cache -DGITHUB_DEPENDENCY_GRAPH_ENABLED=false -DGRADLE_ACTIONS_SKIP_BUILD_RESULT_CAPTURE=true noop
+2026-09-27T05:16:56.4847836Z Initialized native services in: /home/runner/.gradle/native
+2026-09-27T05:16:56.4876227Z Initialized jansi services in: /home/runner/.gradle/native
+2026-09-27T05:16:56.6293139Z The current JVM process isn't compatible with build requirement. The maximum heap size is insufficient.
+2026-09-27T05:16:56.6294617Z 
+2026-09-27T05:16:56.9304089Z To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.7.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+2026-09-27T05:16:56.9314203Z Starting process 'Gradle build daemon'. Working directory: /home/runner/.gradle/daemon/9.7.1 Command: /usr/lib/jvm/temurin-17-jdk-amd64/bin/java --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.xml/javax.xml.namespace=ALL-UNNAMED --add-opens=java.base/java.time=ALL-UNNAMED -XX:MaxMetaspaceSize=384m -XX:+HeapDumpOnOutOfMemoryError -Xms256m -Xmx512m -Dfile.encoding=UTF-8 -Duser.country -Duser.language=en -Duser.variant -cp /usr/share/gradle-9.7.1/lib/gradle-daemon-main-9.7.1.jar -javaagent:/usr/share/gradle-9.7.1/lib/agents/gradle-instrumentation-agent-9.7.1.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 9.7.1
+2026-09-27T05:16:57.0285867Z Successfully started process 'Gradle build daemon'
+2026-09-27T05:17:00.6283545Z An attempt to start the daemon took 3.718 secs.
+2026-09-27T05:17:00.7285987Z The client will now receive all logging from the daemon (pid: 2862). The daemon log file: /home/runner/.gradle/daemon/9.7.1/daemon-2862.out.log
+2026-09-27T05:17:00.7287717Z Daemon will be stopped at the end of the build 
+2026-09-27T05:17:01.5287948Z Using 4 worker leases.
+2026-09-27T05:17:01.7287365Z Operational build model parameters: {cachingModelBuilding=false, configurationCache=false, configurationCacheDisabledReason=null, configurationCacheParallelLoad=false, configurationCacheParallelStore=false, configureOnDemand=false, invalidateCoupledProjects=false, isolatedProjects=false, isolatedProjectsDiagnostics=false, isolatedProjectsDangerouslyIgnoreProblems=false, modelAsProjectDependency=false, modelBuilding=false, parallelModelBuilding=false, parallelProjectConfiguration=false, parallelProjectExecution=false, vintage=true}
+2026-09-27T05:17:02.3288755Z Received JVM installation metadata from '/usr/lib/jvm/temurin-17-jdk-amd64': {JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64, JAVA_VERSION=17.0.20.1, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.20.1+1, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.20.1+1, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
+2026-09-27T05:17:02.7297544Z Watching the file system is configured to be enabled if available
+2026-09-27T05:17:02.8286609Z Now considering [/home/runner/work/_temp/dummy-cleanup-project] as hierarchies to watch
+2026-09-27T05:17:02.8289377Z File system watching is active
+2026-09-27T05:17:03.3284245Z Caching disabled for Groovy DSL script compilation (cp_init) because:
+2026-09-27T05:17:03.3287528Z   Build cache is disabled
+2026-09-27T05:17:03.3288221Z   Not worth caching.
+2026-09-27T05:17:03.3289473Z Compiling initialization script '/home/runner/work/_temp/dummy-cleanup-project/init.gradle' using SubsetScriptTransformer.
+2026-09-27T05:17:04.3290074Z Caching disabled for Groovy DSL script compilation (init) because:
+2026-09-27T05:17:04.3296671Z   Build cache is disabled
+2026-09-27T05:17:04.3306528Z   Not worth caching.
+2026-09-27T05:17:04.3307483Z Compiling initialization script '/home/runner/work/_temp/dummy-cleanup-project/init.gradle' using BuildScriptTransformer.
+2026-09-27T05:17:04.8312358Z Caching disabled for Groovy DSL script compilation (cp_init) because:
+2026-09-27T05:17:04.8317630Z   Build cache is disabled
+2026-09-27T05:17:04.8318618Z   Not worth caching.
+2026-09-27T05:17:04.8319962Z Compiling initialization script '/home/runner/.gradle/init.d/gradle-actions.build-result-capture.init.gradle' using SubsetScriptTransformer.
+2026-09-27T05:17:05.6297086Z Caching disabled for Groovy DSL script compilation (init) because:
+2026-09-27T05:17:05.6297889Z   Build cache is disabled
+2026-09-27T05:17:05.6298352Z   Not worth caching.
+2026-09-27T05:17:05.6299502Z Compiling initialization script '/home/runner/.gradle/init.d/gradle-actions.build-result-capture.init.gradle' using BuildScriptTransformer.
+2026-09-27T05:17:05.9284504Z gradle/actions: Not capturing build results
+2026-09-27T05:17:06.0284938Z Caching disabled for Groovy DSL script compilation (cp_init) because:
+2026-09-27T05:17:06.0286262Z   Build cache is disabled
+2026-09-27T05:17:06.0286989Z   Not worth caching.
+2026-09-27T05:17:06.0288493Z Compiling initialization script '/home/runner/.gradle/init.d/gradle-actions.github-dependency-graph.init.gradle' using SubsetScriptTransformer.
+2026-09-27T05:17:06.1286207Z Caching disabled for Groovy DSL script compilation (init) because:
+2026-09-27T05:17:06.1287231Z   Build cache is disabled
+2026-09-27T05:17:06.1287899Z   Not worth caching.
+2026-09-27T05:17:06.1308319Z Compiling initialization script '/home/runner/.gradle/init.d/gradle-actions.github-dependency-graph.init.gradle' using BuildScriptTransformer.
+2026-09-27T05:17:06.2290547Z Caching disabled for Groovy DSL script compilation (cp_init) because:
+2026-09-27T05:17:06.2291921Z   Build cache is disabled
+2026-09-27T05:17:06.2300659Z   Not worth caching.
+2026-09-27T05:17:06.2302053Z Compiling initialization script '/home/runner/.gradle/init.d/gradle-actions.inject-develocity.init.gradle' using SubsetScriptTransformer.
+2026-09-27T05:17:07.1306657Z Caching disabled for Groovy DSL script compilation (init) because:
+2026-09-27T05:17:07.1307734Z   Build cache is disabled
+2026-09-27T05:17:07.1308394Z   Not worth caching.
+2026-09-27T05:17:07.1309686Z Compiling initialization script '/home/runner/.gradle/init.d/gradle-actions.inject-develocity.init.gradle' using BuildScriptTransformer.
+2026-09-27T05:17:07.4296732Z Starting Build
+2026-09-27T05:17:07.5310594Z Caching disabled for Groovy DSL script compilation (cp_settings) because:
+2026-09-27T05:17:07.5317218Z   Build cache is disabled
+2026-09-27T05:17:07.5317942Z   Not worth caching.
+2026-09-27T05:17:07.5318937Z Compiling settings file '/home/runner/work/_temp/dummy-cleanup-project/settings.gradle' using SubsetScriptTransformer.
+2026-09-27T05:17:07.5320196Z Caching disabled for Groovy DSL script compilation (settings) because:
+2026-09-27T05:17:07.5320874Z   Build cache is disabled
+2026-09-27T05:17:07.5321702Z   Not worth caching.
+2026-09-27T05:17:07.5322612Z Compiling settings file '/home/runner/work/_temp/dummy-cleanup-project/settings.gradle' using BuildScriptTransformer.
+2026-09-27T05:17:07.5324017Z Settings evaluated using settings file '/home/runner/work/_temp/dummy-cleanup-project/settings.gradle'.
+2026-09-27T05:17:07.6315933Z Using local directory build cache for the root build (location = /home/runner/.gradle/caches/build-cache-1, remove unused entries = older than 2026-09-27 05:15:10 UTC).
+2026-09-27T05:17:07.7290443Z Projects loaded. Root project using build file '/home/runner/work/_temp/dummy-cleanup-project/build.gradle'.
+2026-09-27T05:17:07.7296788Z Included projects: [root project 'dummy-cleanup-project']
+2026-09-27T05:17:08.0284088Z 
+2026-09-27T05:17:08.0295845Z > Configure project :
+2026-09-27T05:17:08.0304124Z Evaluating root project 'dummy-cleanup-project' using build file '/home/runner/work/_temp/dummy-cleanup-project/build.gradle'.
+2026-09-27T05:17:08.0307331Z Caching disabled for Groovy DSL script compilation (cp_proj) because:
+2026-09-27T05:17:08.0308909Z   Not worth caching.
+2026-09-27T05:17:08.0311257Z Compiling build file '/home/runner/work/_temp/dummy-cleanup-project/build.gradle' using SubsetScriptTransformer.
+2026-09-27T05:17:08.0312636Z Caching disabled for Groovy DSL script compilation (proj) because:
+2026-09-27T05:17:08.0313851Z   Not worth caching.
+2026-09-27T05:17:08.0316131Z Compiling build file '/home/runner/work/_temp/dummy-cleanup-project/build.gradle' using BuildScriptTransformer.
+2026-09-27T05:17:08.0317689Z All projects evaluated.
+2026-09-27T05:17:08.0319674Z Task name matched 'noop'
+2026-09-27T05:17:08.0321575Z Selected primary task 'noop' from project :
+2026-09-27T05:17:08.1311560Z Tasks to be executed: [task ':noop']
+2026-09-27T05:17:08.1321744Z Tasks that were excluded: []
+2026-09-27T05:17:08.1322875Z Resolve mutations for :noop (Thread[Execution worker,5,main]) started.
+2026-09-27T05:17:08.1323883Z :noop (Thread[Execution worker,5,main]) started.
+2026-09-27T05:17:08.1324468Z 
+2026-09-27T05:17:08.1324845Z > Task :noop UP-TO-DATE
+2026-09-27T05:17:08.1325503Z Skipping task ':noop' as it has no actions.
+2026-09-27T05:17:08.2288036Z 
+2026-09-27T05:17:08.2311902Z BUILD SUCCESSFUL in 12s
+2026-09-27T05:17:08.2313050Z Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.7.1/userguide/configuration_cache_enabling.html
+2026-09-27T05:17:08.3293997Z jars (/home/runner/.gradle/caches/jars-9) cleanup deleted 0 files/directories.
+2026-09-27T05:17:08.3295169Z jars (/home/runner/.gradle/caches/jars-9) removing files not accessed on or after Sun Sep 27 05:15:10 UTC 2026.
+2026-09-27T05:17:08.3296462Z jars (/home/runner/.gradle/caches/jars-9) cleanup deleted 0 files/directories.
+2026-09-27T05:17:08.3297303Z jars (/home/runner/.gradle/caches/jars-9) cleaned up in 0.006 secs.
+2026-09-27T05:17:08.3298218Z artifact cache (/home/runner/.gradle/caches/modules-2) cleanup deleted 0 files/directories.
+2026-09-27T05:17:08.3299686Z artifact cache (/home/runner/.gradle/caches/modules-2) [subdir: /home/runner/.gradle/caches/modules-2/resources-2.1] cleanup deleted 0 files/directories.
+2026-09-27T05:17:08.3300902Z artifact cache (/home/runner/.gradle/caches/modules-2) [subdir: /home/runner/.gradle/caches/modules-2/resources-2.1] removing files not accessed on or after Sun Sep 27 05:15:10 UTC 2026.
+2026-09-27T05:17:08.3302013Z artifact cache (/home/runner/.gradle/caches/modules-2) [subdir: /home/runner/.gradle/caches/modules-2/resources-2.1] cleanup deleted 0 files/directories.
+2026-09-27T05:17:08.3303040Z artifact cache (/home/runner/.gradle/caches/modules-2) [subdir: /home/runner/.gradle/caches/modules-2/files-2.1] cleanup deleted 0 files/directories.
+2026-09-27T05:17:08.3304117Z artifact cache (/home/runner/.gradle/caches/modules-2) [subdir: /home/runner/.gradle/caches/modules-2/files-2.1] removing files not accessed on or after Sun Sep 27 05:15:10 UTC 2026.
+2026-09-27T05:17:08.3761522Z artifact cache (/home/runner/.gradle/caches/modules-2) [subdir: /home/runner/.gradle/caches/modules-2/files-2.1] cleanup deleted 0 files/directories.
+2026-09-27T05:17:08.3763403Z artifact cache (/home/runner/.gradle/caches/modules-2) [subdir: /home/runner/.gradle/caches/modules-2/metadata-2.107] cleanup deleted 0 files/directories.
+2026-09-27T05:17:08.3764898Z artifact cache (/home/runner/.gradle/caches/modules-2) cleanup deleted 0 files/directories.
+2026-09-27T05:17:08.3765857Z artifact cache (/home/runner/.gradle/caches/modules-2) cleaned up in 0.114 secs.
+2026-09-27T05:17:08.4666516Z ##[endgroup]
+2026-09-27T05:17:08.4667452Z ##[group]Caching Gradle state
+2026-09-27T05:17:08.5008549Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/retro-manager/retro-manager --files-from manifest.txt --use-compress-program zstdmt
+2026-09-27T05:17:08.5049757Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/retro-manager/retro-manager --files-from manifest.txt --use-compress-program zstdmt
+2026-09-27T05:17:09.1467055Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/retro-manager/retro-manager --files-from manifest.txt --use-compress-program zstdmt
+2026-09-27T05:17:09.2620669Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/retro-manager/retro-manager --files-from manifest.txt --use-compress-program zstdmt
+2026-09-27T05:17:09.2851049Z Sent 65196 of 65196 (100.0%), 0.8 MBs/sec
+2026-09-27T05:17:09.2902406Z Failed to save cache entry with path '/home/runner/.gradle/wrapper/dists/gradle-9.5.1-bin/iq79hdu3mqx29lgffhp8bfmx' and key: gradle-wrapper-zips-v1-32a3a100d181ec75e824fde1164fcedd: ReserveCacheError: Unable to reserve cache with key gradle-wrapper-zips-v1-32a3a100d181ec75e824fde1164fcedd, another job may be creating this cache.
+2026-09-27T05:17:09.3915774Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/retro-manager/retro-manager --files-from manifest.txt --use-compress-program zstdmt
+2026-09-27T05:17:09.4215515Z Failed to save cache entry with path '/home/runner/.gradle/caches/*/kotlin-dsl/accessors/*/,/home/runner/.gradle/caches/*/kotlin-dsl/scripts/*/' and key: gradle-kotlin-dsl-v1-32c83c2786f3c9b9c91f020d1b3ce498: ReserveCacheError: Unable to reserve cache with key gradle-kotlin-dsl-v1-32c83c2786f3c9b9c91f020d1b3ce498, another job may be creating this cache.
+2026-09-27T05:17:09.5443155Z Failed to save cache entry with path '/home/runner/.gradle/caches/9.5.1/generated-gradle-jars/gradle-api-9.5.1.jar' and key: gradle-generated-gradle-jars-v1-a170f616d8fd19db0bb463c397263c9f: ReserveCacheError: Unable to reserve cache with key gradle-generated-gradle-jars-v1-a170f616d8fd19db0bb463c397263c9f, another job may be creating this cache.
+2026-09-27T05:17:09.5748420Z Saved cache entry with key gradle-instrumented-jars-v1-34b81847767c36144a8214968b26da6b from /home/runner/.gradle/caches/jars-*/*/ in 532ms
+2026-09-27T05:17:09.6630416Z Sent 110564 of 110564 (100.0%), 2.6 MBs/sec
+2026-09-27T05:17:09.7430319Z Saved cache entry with key gradle-groovy-dsl-v1-d1acee2540f734780ed56ab9a14b7924 from /home/runner/.gradle/caches/*/groovy-dsl/*/ in 577ms
+2026-09-27T05:17:09.8436739Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/retro-manager/retro-manager --files-from manifest.txt --use-compress-program zstdmt
+2026-09-27T05:17:10.1427084Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/retro-manager/retro-manager --files-from manifest.txt --use-compress-program zstdmt
+2026-09-27T05:17:11.6647611Z Sent 0 of 195703764 (0.0%), 0.0 MBs/sec
+2026-09-27T05:17:12.0406401Z Sent 195703764 of 195703764 (100.0%), 135.5 MBs/sec
+2026-09-27T05:17:12.1235172Z Saved cache entry with key gradle-dependencies-v1-255b35c81dff145b96668dd23f44f8f8 from /home/runner/.gradle/caches/modules-*/files-*/*/*/*/* in 3098ms
+2026-09-27T05:17:12.2262892Z Sent 69750461 of 69750461 (100.0%), 67.7 MBs/sec
+2026-09-27T05:17:12.3452442Z Saved cache entry with key gradle-transforms-v1-563c65d67b7eb51263d500e204661a9d from /home/runner/.gradle/caches/transforms-4/*/,/home/runner/.gradle/caches/*/transforms/*/ in 2516ms
+2026-09-27T05:17:12.7738836Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/retro-manager/retro-manager --files-from manifest.txt --use-compress-program zstdmt
+2026-09-27T05:17:12.9482648Z Sent 341633 of 341633 (100.0%), 4.3 MBs/sec
+2026-09-27T05:17:13.0173499Z Saved cache entry with key gradle-home-v1|Linux-X64|core-tests[f989e74f268cd0c4add6c8ee2153848f]-dce1923673b84d335e6e437478c1c84d15c2f942 from /home/runner/.gradle/caches,/home/runner/.gradle/notifications,/home/runner/.gradle/.setup-gradle in 256ms
+2026-09-27T05:17:13.0177240Z ##[endgroup]
+2026-09-27T05:17:13.0182946Z Generating Job Summary
+2026-09-27T05:17:13.0197204Z Completed post-action step
+2026-09-27T05:17:13.0411732Z Post job cleanup.
+2026-09-27T05:17:13.1912437Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/retro-manager/retro-manager --files-from manifest.txt --use-compress-program zstdmt
+2026-09-27T05:17:13.2507350Z Failed to save: Unable to reserve cache with key setup-java-Linux-x64-gradle-wrapper-e96453a026d08b6ffcfb90eebd2e835169be8f4498a73e85ea1ac79cce81d823, another job may be creating this cache.
+2026-09-27T05:17:13.2617146Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/retro-manager/retro-manager --files-from manifest.txt --use-compress-program zstdmt
+2026-09-27T05:17:13.3558834Z Failed to save: Unable to reserve cache with key setup-java-Linux-x64-gradle-2a7a461d8194570fb89deb22166d088423cba8153ba0fb35f1a0cbe66a9d7f21, another job may be creating this cache.
+2026-09-27T05:17:13.3708818Z Post job cleanup.
+2026-09-27T05:17:13.4538851Z [command]/usr/bin/git version
+2026-09-27T05:17:13.4584947Z git version 2.55.0
+2026-09-27T05:17:13.4623743Z Temporarily overriding HOME='/home/runner/work/_temp/557d8985-b576-45fd-96dc-66520ef36a5d' before making global git config changes
+2026-09-27T05:17:13.4625810Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-27T05:17:13.4629958Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/retro-manager/retro-manager
+2026-09-27T05:17:13.4669344Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-27T05:17:13.4704559Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-27T05:17:13.4963965Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-27T05:17:13.4993798Z http.https://github.com/.extraheader
+2026-09-27T05:17:13.5007185Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-09-27T05:17:13.5045399Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-27T05:17:13.5306874Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-27T05:17:13.5357153Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-27T05:17:13.5822392Z Cleaning up orphan processes
+2026-09-27T05:17:13.6106919Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4, gradle/actions/setup-gradle@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

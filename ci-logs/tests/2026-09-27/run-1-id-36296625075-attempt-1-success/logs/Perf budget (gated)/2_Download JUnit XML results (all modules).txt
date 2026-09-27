@@ -1,0 +1,34 @@
+﻿2026-09-27T05:17:17.9109414Z ##[group]Run actions/download-artifact@v4
+2026-09-27T05:17:17.9110626Z with:
+2026-09-27T05:17:17.9111246Z   pattern: junit-*
+2026-09-27T05:17:17.9111741Z   merge-multiple: true
+2026-09-27T05:17:17.9112259Z   path: junit-xml
+2026-09-27T05:17:17.9112764Z   repository: zephyr4289/retro-manager
+2026-09-27T05:17:17.9113334Z   run-id: 36296625075
+2026-09-27T05:17:17.9114024Z env:
+2026-09-27T05:17:17.9114481Z   PERF_TOTAL_BUDGET_SEC: 600
+2026-09-27T05:17:17.9115023Z   PERF_CLASS_BUDGET_SEC: 120
+2026-09-27T05:17:17.9115532Z ##[endgroup]
+2026-09-27T05:17:18.0795460Z (node:2041) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-09-27T05:17:18.0796847Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-09-27T05:17:18.1516646Z Found 6 artifact(s)
+2026-09-27T05:17:18.1518574Z Filtering artifacts by pattern 'junit-*'
+2026-09-27T05:17:18.1550859Z Preparing to download the following artifacts:
+2026-09-27T05:17:18.1552944Z - junit-template (ID: 10924260653, Size: 4051, Expected Digest: sha256:619b30b9bf64f1cdf14ab32418c653091c254e3f7cbb682739002120975951b0)
+2026-09-27T05:17:18.1555908Z - junit-runtime (ID: 10924012155, Size: 28325, Expected Digest: sha256:6d3436d3fbd036362311b0d3e82139c7b9502ab713597cadd1d5492d711ad889)
+2026-09-27T05:17:18.1558694Z - junit-core (ID: 10923699769, Size: 16598, Expected Digest: sha256:4e357a0eff7fc737d01367ec2f99673f9587965234878d0f7b34e574d1792779)
+2026-09-27T05:17:18.2951743Z Redirecting to blob download url: https://productionresultssa14.blob.core.windows.net/actions-results/b6ed76b4-8b98-4a3f-8f38-d46bb8d018b7/workflow-job-run-b0263c10-4545-58cb-b3aa-aa1c2707bb81/artifacts/30750de40f6225488a9386882b15571eddea6a2f6187d33c44ac4630b31f5cbb.zip
+2026-09-27T05:17:18.2955976Z Starting download of artifact to: /home/runner/work/retro-manager/retro-manager/junit-xml
+2026-09-27T05:17:18.2981036Z Redirecting to blob download url: https://productionresultssa14.blob.core.windows.net/actions-results/b6ed76b4-8b98-4a3f-8f38-d46bb8d018b7/workflow-job-run-394cac6c-c210-5a3d-8ce7-a17fc68a6a3b/artifacts/28bc5eb48c92764e7fdb6c8fb066d66555f34ca33abb2b2cca063407e33ea5bd.zip
+2026-09-27T05:17:18.2985862Z Starting download of artifact to: /home/runner/work/retro-manager/retro-manager/junit-xml
+2026-09-27T05:17:18.3115794Z Redirecting to blob download url: https://productionresultssa14.blob.core.windows.net/actions-results/b6ed76b4-8b98-4a3f-8f38-d46bb8d018b7/workflow-job-run-0694b38e-a166-572a-96b3-b1ed0bd9edda/artifacts/69317cba3bbadf432cd69dc1c81210a22d759f7030244ed54c40ccf1e89dbe3f.zip
+2026-09-27T05:17:18.3118344Z Starting download of artifact to: /home/runner/work/retro-manager/retro-manager/junit-xml
+2026-09-27T05:17:18.3242916Z (node:2041) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-09-27T05:17:18.3642887Z SHA256 digest of downloaded artifact is 619b30b9bf64f1cdf14ab32418c653091c254e3f7cbb682739002120975951b0
+2026-09-27T05:17:18.3644948Z Artifact download completed successfully.
+2026-09-27T05:17:18.3674198Z SHA256 digest of downloaded artifact is 4e357a0eff7fc737d01367ec2f99673f9587965234878d0f7b34e574d1792779
+2026-09-27T05:17:18.3676047Z Artifact download completed successfully.
+2026-09-27T05:17:18.3753080Z SHA256 digest of downloaded artifact is 6d3436d3fbd036362311b0d3e82139c7b9502ab713597cadd1d5492d711ad889
+2026-09-27T05:17:18.3755062Z Artifact download completed successfully.
+2026-09-27T05:17:18.3756188Z Total of 3 artifact(s) downloaded
+2026-09-27T05:17:18.3759935Z Download artifact has finished successfully

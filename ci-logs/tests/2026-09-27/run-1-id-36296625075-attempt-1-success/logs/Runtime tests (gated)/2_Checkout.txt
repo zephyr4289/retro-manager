@@ -1,0 +1,76 @@
+﻿2026-09-27T05:14:34.0173470Z ##[group]Run actions/checkout@v4
+2026-09-27T05:14:34.0173935Z with:
+2026-09-27T05:14:34.0174174Z   repository: zephyr4289/retro-manager
+2026-09-27T05:14:34.0176340Z   token: ***
+2026-09-27T05:14:34.0176630Z   ssh-strict: true
+2026-09-27T05:14:34.0176857Z   ssh-user: git
+2026-09-27T05:14:34.0177097Z   persist-credentials: true
+2026-09-27T05:14:34.0177339Z   clean: true
+2026-09-27T05:14:34.0177571Z   sparse-checkout-cone-mode: true
+2026-09-27T05:14:34.0177851Z   fetch-depth: 1
+2026-09-27T05:14:34.0178095Z   fetch-tags: false
+2026-09-27T05:14:34.0178341Z   show-progress: true
+2026-09-27T05:14:34.0178559Z   lfs: false
+2026-09-27T05:14:34.0178771Z   submodules: false
+2026-09-27T05:14:34.0179061Z   set-safe-directory: true
+2026-09-27T05:14:34.0179310Z   allow-unsafe-pr-checkout: false
+2026-09-27T05:14:34.0179705Z env:
+2026-09-27T05:14:34.0179952Z   PERF_TOTAL_BUDGET_SEC: 600
+2026-09-27T05:14:34.0180212Z   PERF_CLASS_BUDGET_SEC: 120
+2026-09-27T05:14:34.0180458Z ##[endgroup]
+2026-09-27T05:14:34.0894876Z Syncing repository: zephyr4289/retro-manager
+2026-09-27T05:14:34.0896570Z ##[group]Getting Git version info
+2026-09-27T05:14:34.0897077Z Working directory is '/home/runner/work/retro-manager/retro-manager'
+2026-09-27T05:14:34.0898546Z [command]/usr/bin/git version
+2026-09-27T05:14:34.2494519Z git version 2.55.0
+2026-09-27T05:14:34.2507842Z ##[endgroup]
+2026-09-27T05:14:34.2519874Z Temporarily overriding HOME='/home/runner/work/_temp/89ada2c4-f83a-41dc-b9e4-4f787bc0e73f' before making global git config changes
+2026-09-27T05:14:34.2521212Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-27T05:14:34.2524522Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/retro-manager/retro-manager
+2026-09-27T05:14:34.2561242Z Deleting the contents of '/home/runner/work/retro-manager/retro-manager'
+2026-09-27T05:14:34.2565077Z ##[group]Initializing the repository
+2026-09-27T05:14:34.2568344Z [command]/usr/bin/git init /home/runner/work/retro-manager/retro-manager
+2026-09-27T05:14:34.4161096Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-09-27T05:14:34.4161772Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-09-27T05:14:34.4162308Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-09-27T05:14:34.4162709Z hint: call:
+2026-09-27T05:14:34.4162914Z hint:
+2026-09-27T05:14:34.4163278Z hint: 	git config --global init.defaultBranch <name>
+2026-09-27T05:14:34.4163605Z hint:
+2026-09-27T05:14:34.4163918Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-09-27T05:14:34.4164899Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-09-27T05:14:34.4165364Z hint:
+2026-09-27T05:14:34.4165607Z hint: 	git branch -m <name>
+2026-09-27T05:14:34.4165880Z hint:
+2026-09-27T05:14:34.4166244Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-09-27T05:14:34.4166868Z Initialized empty Git repository in /home/runner/work/retro-manager/retro-manager/.git/
+2026-09-27T05:14:34.4178292Z [command]/usr/bin/git remote add origin https://github.com/zephyr4289/retro-manager
+2026-09-27T05:14:34.4213564Z ##[endgroup]
+2026-09-27T05:14:34.4214129Z ##[group]Disabling automatic garbage collection
+2026-09-27T05:14:34.4217133Z [command]/usr/bin/git config --local gc.auto 0
+2026-09-27T05:14:34.4239753Z ##[endgroup]
+2026-09-27T05:14:34.4240085Z ##[group]Setting up auth
+2026-09-27T05:14:34.4245024Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-27T05:14:34.4268949Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-27T05:14:34.4646161Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-27T05:14:34.4662551Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-27T05:14:34.4808295Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-27T05:14:34.4830801Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-27T05:14:34.4973837Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-09-27T05:14:34.5003964Z ##[endgroup]
+2026-09-27T05:14:34.5004968Z ##[group]Fetching the repository
+2026-09-27T05:14:34.5011259Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +dce1923673b84d335e6e437478c1c84d15c2f942:refs/remotes/origin/main
+2026-09-27T05:14:35.8609083Z From https://github.com/zephyr4289/retro-manager
+2026-09-27T05:14:35.8609590Z  * [new ref]         dce1923673b84d335e6e437478c1c84d15c2f942 -> origin/main
+2026-09-27T05:14:35.8612814Z ##[endgroup]
+2026-09-27T05:14:35.8613769Z ##[group]Determining the checkout info
+2026-09-27T05:14:35.8616184Z ##[endgroup]
+2026-09-27T05:14:35.8622923Z [command]/usr/bin/git sparse-checkout disable
+2026-09-27T05:14:35.8670967Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-09-27T05:14:35.8695787Z ##[group]Checking out the ref
+2026-09-27T05:14:35.8699957Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-09-27T05:14:35.9066632Z Switched to a new branch 'main'
+2026-09-27T05:14:35.9081329Z branch 'main' set up to track 'origin/main'.
+2026-09-27T05:14:35.9082384Z ##[endgroup]
+2026-09-27T05:14:35.9111772Z [command]/usr/bin/git log -1 --format=%H
+2026-09-27T05:14:35.9128728Z dce1923673b84d335e6e437478c1c84d15c2f942

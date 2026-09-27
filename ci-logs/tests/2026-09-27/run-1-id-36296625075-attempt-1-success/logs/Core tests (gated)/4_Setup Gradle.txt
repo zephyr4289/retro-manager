@@ -1,0 +1,37 @@
+﻿2026-09-27T05:15:08.7205840Z ##[group]Run gradle/actions/setup-gradle@v4
+2026-09-27T05:15:08.7206269Z with:
+2026-09-27T05:15:08.7206525Z   cache-disabled: false
+2026-09-27T05:15:08.7206810Z   cache-read-only: false
+2026-09-27T05:15:08.7207099Z   cache-write-only: false
+2026-09-27T05:15:08.7207408Z   cache-overwrite-existing: false
+2026-09-27T05:15:08.7207728Z   cache-cleanup: on-success
+2026-09-27T05:15:08.7208073Z   gradle-home-cache-includes: caches
+notifications
+
+2026-09-27T05:15:08.7208452Z   add-job-summary: always
+2026-09-27T05:15:08.7208757Z   add-job-summary-as-pr-comment: never
+2026-09-27T05:15:08.7209093Z   dependency-graph: disabled
+2026-09-27T05:15:08.7209448Z   dependency-graph-report-dir: dependency-graph-reports
+2026-09-27T05:15:08.7209867Z   dependency-graph-continue-on-failure: true
+2026-09-27T05:15:08.7210219Z   build-scan-publish: false
+2026-09-27T05:15:08.7210506Z   validate-wrappers: true
+2026-09-27T05:15:08.7210801Z   allow-snapshot-wrappers: false
+2026-09-27T05:15:08.7211139Z   gradle-home-cache-strict-match: false
+2026-09-27T05:15:08.7211511Z   workflow-job-context: null
+2026-09-27T05:15:08.7213951Z   github-token: ***
+2026-09-27T05:15:08.7214209Z env:
+2026-09-27T05:15:08.7214462Z   PERF_TOTAL_BUDGET_SEC: 600
+2026-09-27T05:15:08.7214764Z   PERF_CLASS_BUDGET_SEC: 120
+2026-09-27T05:15:08.7215164Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-09-27T05:15:08.7215852Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-09-27T05:15:08.7216474Z   MAVEN_ARGS: -ntp
+2026-09-27T05:15:08.7216777Z ##[endgroup]
+2026-09-27T05:15:10.2543335Z Merged default JDK locations into /home/runner/.m2/toolchains.xml
+2026-09-27T05:15:10.2545168Z Preparing cache for cleanup.
+2026-09-27T05:15:10.2549471Z ##[group]Restore Gradle state from cache
+2026-09-27T05:15:10.3172648Z Gradle User Home cache not found. Will initialize empty.
+2026-09-27T05:15:10.3174038Z ##[endgroup]
+2026-09-27T05:15:10.3396767Z ##[group]All Gradle Wrapper jars are valid
+2026-09-27T05:15:10.3398227Z ✓ Found known Gradle Wrapper JAR files:
+2026-09-27T05:15:10.3399310Z   cb0da6751c2b753a16ac168bb354870ebb1e162e9083f116729cec9c781156b8 gradle/wrapper/gradle-wrapper.jar
+2026-09-27T05:15:10.3400577Z ##[endgroup]

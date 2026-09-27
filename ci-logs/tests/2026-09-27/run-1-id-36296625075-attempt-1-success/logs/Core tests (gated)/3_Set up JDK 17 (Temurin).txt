@@ -1,0 +1,36 @@
+﻿2026-09-27T05:15:08.1029260Z ##[group]Run actions/setup-java@v5
+2026-09-27T05:15:08.1029654Z with:
+2026-09-27T05:15:08.1029910Z   distribution: temurin
+2026-09-27T05:15:08.1030189Z   java-version: 17
+2026-09-27T05:15:08.1030449Z   cache: gradle
+2026-09-27T05:15:08.1030696Z   java-package: jdk
+2026-09-27T05:15:08.1031033Z   check-latest: false
+2026-09-27T05:15:08.1031301Z   set-default: true
+2026-09-27T05:15:08.1031575Z   verify-signature: false
+2026-09-27T05:15:08.1031853Z   server-id: github
+2026-09-27T05:15:08.1032121Z   server-username: GITHUB_ACTOR
+2026-09-27T05:15:08.1032432Z   server-password: GITHUB_TOKEN
+2026-09-27T05:15:08.1032736Z   overwrite-settings: true
+2026-09-27T05:15:08.1033019Z   job-status: success
+2026-09-27T05:15:08.1035441Z   token: ***
+2026-09-27T05:15:08.1036029Z   show-download-progress: false
+2026-09-27T05:15:08.1036342Z env:
+2026-09-27T05:15:08.1036582Z   PERF_TOTAL_BUDGET_SEC: 600
+2026-09-27T05:15:08.1036877Z   PERF_CLASS_BUDGET_SEC: 120
+2026-09-27T05:15:08.1037155Z ##[endgroup]
+2026-09-27T05:15:08.2543777Z ##[group]Installed distributions
+2026-09-27T05:15:08.2614323Z Resolved Java 17.0.20+1 from tool-cache
+2026-09-27T05:15:08.2615173Z Setting Java 17.0.20+1 as the default
+2026-09-27T05:15:08.2625939Z Creating toolchains.xml for JDK version 17 from temurin
+2026-09-27T05:15:08.2702606Z Writing to /home/runner/.m2/toolchains.xml
+2026-09-27T05:15:08.2703197Z 
+2026-09-27T05:15:08.2703454Z Java configuration:
+2026-09-27T05:15:08.2704054Z   Distribution: temurin
+2026-09-27T05:15:08.2704662Z   Version: 17.0.20+1
+2026-09-27T05:15:08.2705480Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-09-27T05:15:08.2706230Z 
+2026-09-27T05:15:08.2706701Z ##[endgroup]
+2026-09-27T05:15:08.2742305Z Creating settings.xml with server-id: github
+2026-09-27T05:15:08.2751083Z Writing to /home/runner/.m2/settings.xml
+2026-09-27T05:15:08.2753882Z Configured MAVEN_ARGS to include -ntp to suppress Maven transfer progress logs. Set 'show-download-progress: true' to keep the download progress output.
+2026-09-27T05:15:08.5139535Z gradle cache is not found

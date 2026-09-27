@@ -1,0 +1,312 @@
+﻿2026-09-27T05:15:10.4023464Z ##[group]Run env -u ANDROID_HOME -u ANDROID_SDK_ROOT ./gradlew :core:test --no-daemon --stacktrace
+2026-09-27T05:15:10.4024193Z [36;1menv -u ANDROID_HOME -u ANDROID_SDK_ROOT ./gradlew :core:test --no-daemon --stacktrace[0m
+2026-09-27T05:15:10.4084250Z shell: /usr/bin/bash -e {0}
+2026-09-27T05:15:10.4084594Z env:
+2026-09-27T05:15:10.4084882Z   PERF_TOTAL_BUDGET_SEC: 600
+2026-09-27T05:15:10.4085206Z   PERF_CLASS_BUDGET_SEC: 120
+2026-09-27T05:15:10.4085877Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-09-27T05:15:10.4086555Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-09-27T05:15:10.4087078Z   MAVEN_ARGS: -ntp
+2026-09-27T05:15:10.4087394Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+2026-09-27T05:15:10.4087809Z   GRADLE_USER_HOME: /home/runner/.gradle
+2026-09-27T05:15:10.4088188Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+2026-09-27T05:15:10.4088576Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+2026-09-27T05:15:10.4089141Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+2026-09-27T05:15:10.4089794Z   DEVELOCITY_INJECTION_CUSTOM_VALUE: gradle-actions
+2026-09-27T05:15:10.4090218Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+2026-09-27T05:15:10.4090561Z ##[endgroup]
+2026-09-27T05:15:10.8482709Z Downloading https://services.gradle.org/distributions/gradle-9.5.1-bin.zip
+2026-09-27T05:15:13.5469192Z .............10%.............20%..............30%.............40%.............50%..............60%.............70%..............80%.............90%.............100%
+2026-09-27T05:15:14.9768558Z 
+2026-09-27T05:15:14.9769615Z Welcome to Gradle 9.5.1!
+2026-09-27T05:15:14.9770544Z 
+2026-09-27T05:15:14.9779288Z Here are the highlights of this release:
+2026-09-27T05:15:14.9781324Z  - Task provenance in reports and failure messages
+2026-09-27T05:15:14.9783272Z  - Type-safe accessors for precompiled Kotlin Settings plugins
+2026-09-27T05:15:14.9784154Z 
+2026-09-27T05:15:14.9785405Z For more details see https://docs.gradle.org/9.5.1/release-notes.html
+2026-09-27T05:15:14.9786469Z 
+2026-09-27T05:15:15.0767636Z To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.5.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+2026-09-27T05:15:16.3774095Z Daemon will be stopped at the end of the build 
+2026-09-27T05:16:07.7770512Z 
+2026-09-27T05:16:07.7826542Z > Configure project :app
+2026-09-27T05:16:07.7846307Z w: file:///home/runner/work/retro-manager/retro-manager/app/build.gradle.kts:39:5: 'fun BaseAppModuleExtension.kotlinOptions(configure: Action<KotlinJvmOptions>): Unit' is deprecated. The kotlinOptions types are deprecated, please migrate to the compilerOptions types. More details are here: https://kotl.in/u1r8ln.
+2026-09-27T05:16:19.3780795Z 
+2026-09-27T05:16:19.3781539Z > Task :core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-09-27T05:16:25.0766061Z > Task :core:processResources NO-SOURCE
+2026-09-27T05:16:25.0796664Z > Task :core:processTestResources NO-SOURCE
+2026-09-27T05:16:39.7760914Z 
+2026-09-27T05:16:39.7767443Z > Task :core:compileKotlin
+2026-09-27T05:16:39.7769247Z w: file:///home/runner/work/retro-manager/retro-manager/core/src/main/kotlin/com/retropack/domain/rom/ArchiveExtractor.kt:281:62 'var fileNameW: String!' is deprecated. Deprecated in Java.
+2026-09-27T05:16:39.7771993Z w: file:///home/runner/work/retro-manager/retro-manager/core/src/main/kotlin/com/retropack/domain/rom/ArchiveExtractor.kt:332:9 'constructor(p0: SeekableByteChannel!): SevenZFile' is deprecated. Deprecated in Java.
+2026-09-27T05:16:39.7774788Z w: file:///home/runner/work/retro-manager/retro-manager/core/src/main/kotlin/com/retropack/domain/rom/ArchiveExtractor.kt:371:9 'constructor(p0: File!): SevenZFile' is deprecated. Deprecated in Java.
+2026-09-27T05:16:39.8776150Z 
+2026-09-27T05:16:39.8806600Z > Task :core:compileJava NO-SOURCE
+2026-09-27T05:16:39.8807460Z > Task :core:classes UP-TO-DATE
+2026-09-27T05:16:39.8826076Z > Task :core:jar
+2026-09-27T05:16:45.2786804Z > Task :core:compileTestKotlin
+2026-09-27T05:16:45.2816356Z > Task :core:compileTestJava NO-SOURCE
+2026-09-27T05:16:45.2816911Z > Task :core:testClasses UP-TO-DATE
+2026-09-27T05:16:47.2764469Z 
+2026-09-27T05:16:47.2773435Z > Task :core:test
+2026-09-27T05:16:47.2788026Z 
+2026-09-27T05:16:47.2788777Z ArchiveExtractorTest > isArchive correctly detects ZIP and GZIP magic bytes and extensions() PASSED
+2026-09-27T05:16:47.2789536Z 
+2026-09-27T05:16:47.2790081Z ArchiveExtractorTest > SUPPORTED_ROM_EXTENSIONS contains all 10 console architectures() PASSED
+2026-09-27T05:16:47.2790822Z 
+2026-09-27T05:16:47.3802970Z ArchiveExtractorTest > extractCandidateRom unpacks ZIP containing GBA ROM and ignores metadata() PASSED
+2026-09-27T05:16:47.3803922Z 
+2026-09-27T05:16:47.3866621Z ArchiveExtractorTest > extractCandidateRom handles nested ZIP archives recursively() PASSED
+2026-09-27T05:16:47.3867370Z 
+2026-09-27T05:16:47.3867969Z ArchiveExtractorTest > selectBestEntry prioritizes explicit console extensions over generic bin() PASSED
+2026-09-27T05:16:47.3868823Z 
+2026-09-27T05:16:47.3869254Z ArchiveExtractorTest > extractCandidateRom decompresses GZIP stream() PASSED
+2026-09-27T05:16:47.3869866Z 
+2026-09-27T05:16:47.3870303Z GbRomParserTest > test valid Game Boy Color header parsing with battery SRAM() PASSED
+2026-09-27T05:16:47.3870913Z 
+2026-09-27T05:16:47.3871263Z GbRomParserTest > test corrupted header checksum detection() PASSED
+2026-09-27T05:16:47.3871770Z 
+2026-09-27T05:16:47.3872138Z GbRomParserTest > test valid Game Boy monochrome header parsing() PASSED
+2026-09-27T05:16:47.3872678Z 
+2026-09-27T05:16:47.3873266Z GbRomParserTest > test file too small throws InvalidRomException() PASSED
+2026-09-27T05:16:47.3905892Z 
+2026-09-27T05:16:47.3936415Z GbRomParserTest > test corrupted Nintendo logo detection() PASSED
+2026-09-27T05:16:47.3963439Z 
+2026-09-27T05:16:47.3986527Z GbaRomParserTest > test rejection of invalid fixed-value byte() PASSED
+2026-09-27T05:16:47.4015938Z 
+2026-09-27T05:16:47.4046476Z GbaRomParserTest > test file too small throws InvalidRomException() PASSED
+2026-09-27T05:16:47.4075935Z 
+2026-09-27T05:16:47.4106453Z GbaRomParserTest > test header checksum recalculation and mismatch detection() PASSED
+2026-09-27T05:16:47.4107151Z 
+2026-09-27T05:16:47.4107740Z GbaRomParserTest > test valid GBA header parsing with known game code and maker code() PASSED
+2026-09-27T05:16:47.4136200Z 
+2026-09-27T05:16:47.4166537Z GenesisRomParserTest > test Genesis Mega Drive ROM detection and parsing() PASSED
+2026-09-27T05:16:47.4167746Z 
+2026-09-27T05:16:47.4168183Z IpsUpsPatcherTest > test UPS patch rejects mismatched base ROM CRC() PASSED
+2026-09-27T05:16:47.4168771Z 
+2026-09-27T05:16:47.4169173Z IpsUpsPatcherTest > test UPS inspection and XOR patch application() PASSED
+2026-09-27T05:16:47.4169763Z 
+2026-09-27T05:16:47.4170415Z IpsUpsPatcherTest > test streaming patch application produces identical result to in-memory application() PASSED
+2026-09-27T05:16:47.4171265Z 
+2026-09-27T05:16:47.4171683Z IpsUpsPatcherTest > test IPS literal and RLE record application() PASSED
+2026-09-27T05:16:47.4172248Z 
+2026-09-27T05:16:47.4172540Z IpsUpsPatcherTest > test IPS truncation record() PASSED
+2026-09-27T05:16:47.4172968Z 
+2026-09-27T05:16:47.4173349Z IpsUpsPatcherTest > test rejection of unknown patch signature() PASSED
+2026-09-27T05:16:47.4777616Z 
+2026-09-27T05:16:47.4789999Z MultiPlatformRomParserTest > test Genesis ROM auto-detection via unified RomParser() PASSED
+2026-09-27T05:16:47.4790454Z 
+2026-09-27T05:16:47.4790737Z MultiPlatformRomParserTest > test N64 ROM auto-detection via unified RomParser() PASSED
+2026-09-27T05:16:47.4791130Z 
+2026-09-27T05:16:47.4791371Z MultiPlatformRomParserTest > test NES ROM auto-detection via unified RomParser() PASSED
+2026-09-27T05:16:47.4791709Z 
+2026-09-27T05:16:47.4792024Z MultiPlatformRomParserTest > test extension fallback for unheadered homebrews and disc formats() PASSED
+2026-09-27T05:16:47.4792436Z 
+2026-09-27T05:16:47.4792687Z MultiPlatformRomParserTest > test SNES ROM auto-detection via unified RomParser() PASSED
+2026-09-27T05:16:47.4793354Z 
+2026-09-27T05:16:47.4793598Z MultiPlatformRomParserTest > test NDS ROM auto-detection via unified RomParser() PASSED
+2026-09-27T05:16:47.4793928Z 
+2026-09-27T05:16:47.4794169Z NesRomParserTest > test iNES header parsing with MMC1 mapper and battery() PASSED
+2026-09-27T05:16:47.4794494Z 
+2026-09-27T05:16:47.4794722Z RomParserTest > test digit-leading title gets g_ prefixed package segment() PASSED
+2026-09-27T05:16:47.4795039Z 
+2026-09-27T05:16:47.4795280Z RomParserTest > test GBA checksum match with bad fixed byte falls through to GB() PASSED
+2026-09-27T05:16:47.4795778Z 
+2026-09-27T05:16:47.4796017Z RomParserTest > test auto-detection and identity generation for GBA ROM() PASSED
+2026-09-27T05:16:47.4796334Z 
+2026-09-27T05:16:47.4796551Z RomParserTest > test auto-detection and identity generation for GBC ROM() PASSED
+2026-09-27T05:16:47.4796859Z 
+2026-09-27T05:16:47.4797078Z RomParserTest > test auto-detection and identity generation for GB ROM() PASSED
+2026-09-27T05:16:47.4797392Z 
+2026-09-27T05:16:47.4797604Z RomParserTest > test unidentifiable data throws InvalidRomException() PASSED
+2026-09-27T05:16:47.4797907Z 
+2026-09-27T05:16:47.4798577Z SnesRomParserTest > test HiROM parsing with 512-byte copier header() PASSED
+2026-09-27T05:16:47.4799058Z 
+2026-09-27T05:16:47.4799563Z SnesRomParserTest > test LoROM parsing without copier header() PASSED
+2026-09-27T05:16:47.4801802Z 
+2026-09-27T05:16:47.4802554Z StreamChecksumTest > test standard ASCII test vector() PASSED
+2026-09-27T05:16:47.5790046Z 
+2026-09-27T05:16:47.5827888Z StreamChecksumTest > test file checksum calculation(File) PASSED
+2026-09-27T05:16:47.5856072Z 
+2026-09-27T05:16:47.5906734Z StreamChecksumTest > test multi-chunk stream exceeding 64 KB buffer boundary() PASSED
+2026-09-27T05:16:47.5917711Z 
+2026-09-27T05:16:47.5968482Z StreamChecksumTest > test empty byte array checksums() PASSED
+2026-09-27T05:16:47.5976073Z 
+2026-09-27T05:16:47.5988063Z RuntimeBundleIntegrityTest > pinned bundle files exist() PASSED
+2026-09-27T05:16:47.6015957Z 
+2026-09-27T05:16:47.6046749Z RuntimeBundleIntegrityTest > descriptor entry names match the real native library produced by the NDK build() PASSED
+2026-09-27T05:16:47.6053741Z 
+2026-09-27T05:16:47.6076706Z RuntimeBundleIntegrityTest > compiled-in descriptor and descriptor file agree in lockstep() PASSED
+2026-09-27T05:16:47.6105087Z 
+2026-09-27T05:16:47.6106634Z RuntimeBundleIntegrityTest > descriptor file protected entries match actual template apk entries() PASSED
+2026-09-27T05:16:47.6136113Z 
+2026-09-27T05:16:47.6161332Z RuntimeBundleIntegrityTest > template apk digest matches compiled-in TRUSTED_TEMPLATES anchor() PASSED
+2026-09-27T05:16:47.6174691Z 
+2026-09-27T05:16:47.6175549Z RuntimeBundleIntegrityTest > loadFromDirectory registers the template retrievable via getTemplate() PASSED
+2026-09-27T05:16:47.6177001Z 
+2026-09-27T05:16:47.6177889Z RuntimeBundleIntegrityTest > tampered template fails verification (guard against weakening the gate)() PASSED
+2026-09-27T05:16:47.6772377Z 
+2026-09-27T05:16:47.6777341Z RuntimeDescriptorTest > all 10 canonical runtime descriptors have valid configurations() PASSED
+2026-09-27T05:16:47.6782580Z 
+2026-09-27T05:16:47.6783386Z RuntimeDescriptorTest > roundtrip serialization preserves descriptor structure() PASSED
+2026-09-27T05:16:47.6784202Z 
+2026-09-27T05:16:47.6784788Z RuntimeDescriptorTest > parses canonical runtime descriptor correctly() PASSED
+2026-09-27T05:16:47.6785549Z 
+2026-09-27T05:16:47.6786506Z RuntimeProvisionerTest > detects whole-APK digest mismatch against the trust anchor() PASSED
+2026-09-27T05:16:47.6787382Z 
+2026-09-27T05:16:47.6788195Z RuntimeProvisionerTest > protected-entry mismatch is reported as integrity failure with entry context() PASSED
+2026-09-27T05:16:47.6789160Z 
+2026-09-27T05:16:47.6789783Z RuntimeProvisionerTest > re-registers a cached bundle and skips re-extraction() PASSED
+2026-09-27T05:16:47.6790580Z 
+2026-09-27T05:16:47.6791291Z RuntimeProvisionerTest > extracts nested bundle recursively and registers the template() PASSED
+2026-09-27T05:16:47.6792593Z 
+2026-09-27T05:16:47.6793144Z RuntimeProvisionerTest > re-extracts zero-byte stale files() PASSED
+2026-09-27T05:16:47.6793810Z 
+2026-09-27T05:16:47.6794566Z RuntimeProvisionerTest > reports MissingTemplate with actionable guidance when bundle asset is absent() PASSED
+2026-09-27T05:16:47.6795538Z 
+2026-09-27T05:16:47.6796989Z RuntimeProvisionerTest > reports ExtractionFailure instead of swallowing a malformed descriptor() PASSED
+2026-09-27T05:16:47.6797746Z 
+2026-09-27T05:16:47.6798263Z RuntimeProvisionerTest > empty asset container yields MissingTemplate without throwing() PASSED
+2026-09-27T05:16:47.6798921Z 
+2026-09-27T05:16:47.6799392Z RuntimeRegistryTest > discovers canonical runtimes for all 10 retro console systems() PASSED
+2026-09-27T05:16:47.6800027Z 
+2026-09-27T05:16:47.6800463Z RuntimeRegistryTest > registers and retrieves all 10 canonical descriptors by ID() PASSED
+2026-09-27T05:16:47.6801070Z 
+2026-09-27T05:16:47.6801750Z RuntimeRegistryTest > verifyProtectedEntries validates classes dex and native library against bytecode trust anchors() PASSED
+2026-09-27T05:16:47.6802509Z 
+2026-09-27T05:16:47.6802783Z RuntimeRegistryTest > isTrustedTemplate validates compiled bytecode fingerprint() PASSED
+2026-09-27T05:16:47.6803141Z 
+2026-09-27T05:16:47.6803399Z RuntimeRegistryTest > loads runtime bundle from directory and registers template() PASSED
+2026-09-27T05:16:47.6803910Z 
+2026-09-27T05:16:47.6804217Z RuntimeTemplateTest > verifyProtectedEntries fails closed when protected entry is tampered() PASSED
+2026-09-27T05:16:47.6804674Z 
+2026-09-27T05:16:47.6804952Z RuntimeTemplateTest > verifyProtectedEntries succeeds when digests match() PASSED
+2026-09-27T05:16:47.6805278Z 
+2026-09-27T05:16:47.6805562Z RuntimeTemplateTest > template apk exists and passes integrity check against trusted hash() PASSED
+2026-09-27T05:16:47.6806488Z 
+2026-09-27T05:16:47.6807086Z AlignmentVerifierTest > test assertCompliant passes on compliant archive and fails on unaligned() PASSED
+2026-09-27T05:16:47.6807876Z 
+2026-09-27T05:16:47.6808267Z AlignmentVerifierTest > test non-existent file throws exception() PASSED
+2026-09-27T05:16:47.6808836Z 
+2026-09-27T05:16:47.6809221Z AlignmentVerifierTest > test report on empty or non-native zip() PASSED
+2026-09-27T05:16:48.2759697Z 
+2026-09-27T05:16:48.2777377Z ApkSignerAndVerificationTest > test tampered signed APK fails verification() PASSED
+2026-09-27T05:16:48.3758870Z 
+2026-09-27T05:16:48.3761292Z ApkSignerAndVerificationTest > test single-pass v1 v2 v3 signing and verification with RSA key() PASSED
+2026-09-27T05:16:48.4768682Z 
+2026-09-27T05:16:48.4777375Z ApkSignerAndVerificationTest > test single-pass v1 v2 v3 signing and verification with EC P-256 key() PASSED
+2026-09-27T05:16:48.4802302Z 
+2026-09-27T05:16:48.4826740Z AxmlMutatorTest > mutate fails when activity name has no package qualifier() PASSED
+2026-09-27T05:16:48.4827531Z 
+2026-09-27T05:16:48.4828198Z AxmlMutatorTest > mutate updates package name label versionCode and versionName() PASSED
+2026-09-27T05:16:48.4829091Z 
+2026-09-27T05:16:48.4829677Z AxmlMutatorTest > mutate fails when extractNativeLibs attribute is absent() PASSED
+2026-09-27T05:16:48.4830431Z 
+2026-09-27T05:16:48.4831173Z AxmlMutatorTest > mutate fails with IllegalStateException when activity uses shorthand relative name() PASSED
+2026-09-27T05:16:48.4832116Z 
+2026-09-27T05:16:48.4835414Z AxmlMutatorTest > mutate fails with IllegalStateException when extractNativeLibs is true() PASSED
+2026-09-27T05:16:48.6758742Z 
+2026-09-27T05:16:48.6762545Z BuildEngineTest > test complete 15-step transformation pipeline with GBA rom() PASSED
+2026-09-27T05:16:48.6763435Z 
+2026-09-27T05:16:48.6764006Z BuildEngineTest > test build fails cleanly on empty ROM() PASSED
+2026-09-27T05:16:48.7758661Z 
+2026-09-27T05:16:48.7764723Z BuildEngineTest > test build fails on missing template() PASSED
+2026-09-27T05:16:48.7766184Z 
+2026-09-27T05:16:48.7767378Z BuildEngineTest > test template hash skip decision honors identity match only() PASSED
+2026-09-27T05:16:48.9759058Z 
+2026-09-27T05:16:48.9760518Z BuildEngineTest > test precomputed checksums path matches default build outputs() PASSED
+2026-09-27T05:16:48.9761401Z 
+2026-09-27T05:16:48.9771888Z BuildTerminalReporterTest > genuine success renders the complete banner with real artifact path() PASSED
+2026-09-27T05:16:48.9772377Z 
+2026-09-27T05:16:48.9772735Z BuildTerminalReporterTest > success marked result pointing at missing file is rendered as failure() PASSED
+2026-09-27T05:16:48.9773186Z 
+2026-09-27T05:16:48.9773435Z BuildTerminalReporterTest > abort summary never claims completion() PASSED
+2026-09-27T05:16:48.9773804Z 
+2026-09-27T05:16:48.9774144Z BuildTerminalReporterTest > success marked result without artifact file is rendered as failure() PASSED
+2026-09-27T05:16:48.9774582Z 
+2026-09-27T05:16:48.9774882Z BuildTerminalReporterTest > failure summary defaults null error to explicit message() PASSED
+2026-09-27T05:16:48.9775284Z 
+2026-09-27T05:16:48.9775837Z BuildTerminalReporterTest > failed result never renders success banner or verification claims() PASSED
+2026-09-27T05:16:49.3758822Z 
+2026-09-27T05:16:49.3764482Z HomebrewConformanceTest > conformance test 3 - Game Boy Advance Anguna Warriors of the Demis() PASSED
+2026-09-27T05:16:49.4786299Z 
+2026-09-27T05:16:49.4807228Z HomebrewConformanceTest > conformance test 1 - Game Boy Tobu Tobu Girl Deluxe() PASSED
+2026-09-27T05:16:49.4808161Z 
+2026-09-27T05:16:49.4808821Z HomebrewConformanceTest > conformance test 2 - Game Boy Color Dangan GB() PASSED
+2026-09-27T05:16:49.5759137Z 
+2026-09-27T05:16:49.5760316Z IconInjectorTest > validatePng rejects invalid headers or short byte arrays() PASSED
+2026-09-27T05:16:49.5761220Z 
+2026-09-27T05:16:49.5762076Z IconInjectorTest > prepareIconEntries maps foreground and optional background correctly() PASSED
+2026-09-27T05:16:49.5763025Z 
+2026-09-27T05:16:49.5772617Z IconInjectorTest > prepareIconEntries works with foreground only() PASSED
+2026-09-27T05:16:49.5773408Z 
+2026-09-27T05:16:49.5773932Z IconInjectorTest > validatePng succeeds on valid png header() PASSED
+2026-09-27T05:16:49.5774670Z 
+2026-09-27T05:16:49.5775336Z PackageIdentityTest > createWithHash reuses precomputed digest without rehashing rom() PASSED
+2026-09-27T05:16:49.5776420Z 
+2026-09-27T05:16:49.5777090Z PackageIdentityTest > validatePackageName accepts valid Android package identifiers() PASSED
+2026-09-27T05:16:49.5777928Z 
+2026-09-27T05:16:49.5778526Z PackageIdentityTest > slug sanitization handles punctuation and spaces() PASSED
+2026-09-27T05:16:49.5779263Z 
+2026-09-27T05:16:49.5780609Z PackageIdentityTest > slug sanitization prefixes numeric first character with g_() PASSED
+2026-09-27T05:16:49.5781424Z 
+2026-09-27T05:16:49.5781976Z PackageIdentityTest > validatePackageName rejects invalid formats() PASSED
+2026-09-27T05:16:49.5782693Z 
+2026-09-27T05:16:49.5783305Z PackageIdentityTest > same rom bytes and title produce identical package identity() PASSED
+2026-09-27T05:16:49.5784086Z 
+2026-09-27T05:16:49.5784716Z PackageIdentityTest > different rom bytes produce different hash10 and package names() PASSED
+2026-09-27T05:16:49.5785530Z 
+2026-09-27T05:16:49.5786380Z PackageIdentityTest > creates deterministic package name from game title and rom hash() PASSED
+2026-09-27T05:16:49.5787534Z 
+2026-09-27T05:16:49.5788118Z PackageIdentityTest > slug sanitization falls back to game when empty() PASSED
+2026-09-27T05:16:49.5788847Z 
+2026-09-27T05:16:49.5789615Z ProtectedEntriesVerifierTest > verifyApk validates the real pinned runtime template descriptor() PASSED
+2026-09-27T05:16:49.5790545Z 
+2026-09-27T05:16:49.5791404Z ProtectedEntriesVerifierTest > verifyEntries accepts uppercase SHA256-prefixed and whitespace-padded digests() PASSED
+2026-09-27T05:16:49.5792416Z 
+2026-09-27T05:16:49.5793198Z ProtectedEntriesVerifierTest > verifyEntries throws SecurityException when protected entry is missing() PASSED
+2026-09-27T05:16:49.5794141Z 
+2026-09-27T05:16:49.5794930Z ProtectedEntriesVerifierTest > verifyEntries throws SecurityException when protected entry is tampered() PASSED
+2026-09-27T05:16:49.5796359Z 
+2026-09-27T05:16:49.5797044Z ProtectedEntriesVerifierTest > matchesDigest still rejects mismatching prefixed digests() PASSED
+2026-09-27T05:16:49.5797912Z 
+2026-09-27T05:16:49.5798587Z ProtectedEntriesVerifierTest > verifyEntries accepts sha256-prefixed declared digests() PASSED
+2026-09-27T05:16:49.5799440Z 
+2026-09-27T05:16:49.5800051Z ProtectedEntriesVerifierTest > verifyEntries succeeds when all digests match() PASSED
+2026-09-27T05:16:49.5800827Z 
+2026-09-27T05:16:49.5801423Z RomAssetInjectorTest > sanitizeEntryPath rejects path traversal sequences() PASSED
+2026-09-27T05:16:49.5802200Z 
+2026-09-27T05:16:49.5802747Z RomAssetInjectorTest > empty rom bytes or blank json throws exception() PASSED
+2026-09-27T05:16:49.5803467Z 
+2026-09-27T05:16:49.5804048Z RomAssetInjectorTest > prepares correct asset entries for rom and config() PASSED
+2026-09-27T05:16:49.5804778Z 
+2026-09-27T05:16:49.5805478Z ScratchAllocatorTest > atomicFinalize renames scratch file to target and replaces existing() PASSED
+2026-09-27T05:16:49.5806544Z 
+2026-09-27T05:16:49.5807125Z ScratchAllocatorTest > allocates scratch file in same directory as target() PASSED
+2026-09-27T05:16:49.5807864Z 
+2026-09-27T05:16:49.5808357Z ScratchAllocatorTest > detects signature residue correctly() PASSED
+2026-09-27T05:16:49.5809082Z 
+2026-09-27T05:16:49.5809792Z ZipArchiveTransformerTest > test transform aligns so files to 16KB and strips signature residue() PASSED
+2026-09-27T05:16:49.5810722Z 
+2026-09-27T05:16:49.5811319Z HybridKeystoreTest > test EC P-256 identity generation and certificate validity() PASSED
+2026-09-27T05:16:49.7758887Z 
+2026-09-27T05:16:49.7759630Z HybridKeystoreTest > test encrypted persistence at rest roundtrip(File) PASSED
+2026-09-27T05:16:49.7760294Z 
+2026-09-27T05:16:49.7760675Z HybridKeystoreTest > test RSA-2048 identity generation and certificate validity() PASSED
+2026-09-27T05:16:49.7761129Z 
+2026-09-27T05:16:49.7761459Z HybridKeystoreTest > test corrupt payload sizes rejected without large allocation() PASSED
+2026-09-27T05:16:49.9768656Z 
+2026-09-27T05:16:49.9787300Z HybridKeystoreTest > test PKCS12 password-protected export and re-import() PASSED
+2026-09-27T05:16:50.2760825Z gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_2-1790486120391.json
+2026-09-27T05:16:50.2761706Z 
+2026-09-27T05:16:50.2762503Z [Incubating] Problems report is available at: file:///home/runner/work/retro-manager/retro-manager/build/reports/problems/problems-report.html
+2026-09-27T05:16:50.2763492Z 
+2026-09-27T05:16:50.2764331Z Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+2026-09-27T05:16:50.2764986Z 
+2026-09-27T05:16:50.2766005Z You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+2026-09-27T05:16:50.2766918Z 
+2026-09-27T05:16:50.2767796Z For more on this, please refer to https://docs.gradle.org/9.5.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+2026-09-27T05:16:50.2768949Z 
+2026-09-27T05:16:50.2769657Z BUILD SUCCESSFUL in 1m 39s
+2026-09-27T05:16:50.2770103Z 4 actionable tasks: 4 executed
+2026-09-27T05:16:50.2771111Z Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.5.1/userguide/configuration_cache_enabling.html

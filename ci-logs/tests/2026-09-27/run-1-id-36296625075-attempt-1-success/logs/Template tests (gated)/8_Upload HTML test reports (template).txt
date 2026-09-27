@@ -1,0 +1,38 @@
+﻿2026-09-27T05:16:26.9855362Z ##[group]Run actions/upload-artifact@v4
+2026-09-27T05:16:26.9855693Z with:
+2026-09-27T05:16:26.9855912Z   name: test-reports-template
+2026-09-27T05:16:26.9856202Z   path: template-apk/build/reports/tests
+
+2026-09-27T05:16:26.9856507Z   if-no-files-found: warn
+2026-09-27T05:16:26.9856756Z   retention-days: 30
+2026-09-27T05:16:26.9856980Z   compression-level: 6
+2026-09-27T05:16:26.9857209Z   overwrite: false
+2026-09-27T05:16:26.9857424Z   include-hidden-files: false
+2026-09-27T05:16:26.9857655Z env:
+2026-09-27T05:16:26.9857849Z   PERF_TOTAL_BUDGET_SEC: 600
+2026-09-27T05:16:26.9858101Z   PERF_CLASS_BUDGET_SEC: 120
+2026-09-27T05:16:26.9858441Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-09-27T05:16:26.9858945Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-09-27T05:16:26.9859321Z   MAVEN_ARGS: -ntp
+2026-09-27T05:16:26.9859572Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+2026-09-27T05:16:26.9859875Z   GRADLE_USER_HOME: /home/runner/.gradle
+2026-09-27T05:16:26.9860193Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+2026-09-27T05:16:26.9860822Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+2026-09-27T05:16:26.9861266Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+2026-09-27T05:16:26.9861746Z   DEVELOCITY_INJECTION_CUSTOM_VALUE: gradle-actions
+2026-09-27T05:16:26.9862062Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+2026-09-27T05:16:26.9862325Z ##[endgroup]
+2026-09-27T05:16:27.1504495Z (node:2713) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-09-27T05:16:27.1505845Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-09-27T05:16:27.1615467Z With the provided path, there will be 15 files uploaded
+2026-09-27T05:16:27.1621503Z Artifact name is valid!
+2026-09-27T05:16:27.1622158Z Root directory input is valid!
+2026-09-27T05:16:27.5026207Z Beginning upload of artifact content to blob storage
+2026-09-27T05:16:27.5405052Z (node:2713) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-09-27T05:16:27.8785699Z Uploaded bytes 18630
+2026-09-27T05:16:27.9583208Z Finished uploading artifact content to blob storage!
+2026-09-27T05:16:27.9584307Z SHA256 digest of uploaded artifact zip is 8e9647ce974777c4efd799a7d0b6388c982a6b49e054017498adaf091ac4bda7
+2026-09-27T05:16:27.9586324Z Finalizing artifact upload
+2026-09-27T05:16:28.2402045Z Artifact test-reports-template.zip successfully finalized. Artifact ID 10924435462
+2026-09-27T05:16:28.2403807Z Artifact test-reports-template has been successfully uploaded! Final size is 18630 bytes. Artifact ID is 10924435462
+2026-09-27T05:16:28.2409467Z Artifact download URL: https://github.com/zephyr4289/retro-manager/actions/runs/36296625075/artifacts/10924435462
