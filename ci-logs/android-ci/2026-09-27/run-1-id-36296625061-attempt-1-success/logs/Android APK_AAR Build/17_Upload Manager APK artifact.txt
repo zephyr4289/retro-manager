@@ -1,0 +1,39 @@
+﻿2026-09-27T05:19:53.5095521Z ##[group]Run actions/upload-artifact@v4
+2026-09-27T05:19:53.5096020Z with:
+2026-09-27T05:19:53.5096353Z   name: manager-apk-debug
+2026-09-27T05:19:53.5096796Z   path: app/build/outputs/apk/debug/*.apk
+2026-09-27T05:19:53.5097268Z   if-no-files-found: warn
+2026-09-27T05:19:53.5097659Z   compression-level: 6
+2026-09-27T05:19:53.5098034Z   overwrite: false
+2026-09-27T05:19:53.5098405Z   include-hidden-files: false
+2026-09-27T05:19:53.5098826Z env:
+2026-09-27T05:19:53.5099326Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-09-27T05:19:53.5100182Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-09-27T05:19:53.5100897Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+2026-09-27T05:19:53.5101420Z   GRADLE_USER_HOME: /home/runner/.gradle
+2026-09-27T05:19:53.5101942Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+2026-09-27T05:19:53.5102471Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+2026-09-27T05:19:53.5103521Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+2026-09-27T05:19:53.5104426Z   DEVELOCITY_INJECTION_CUSTOM_VALUE: gradle-actions
+2026-09-27T05:19:53.5105023Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+2026-09-27T05:19:53.5105530Z   ANDROID_HOME: /usr/local/lib/android/sdk
+2026-09-27T05:19:53.5106057Z   ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
+2026-09-27T05:19:53.5106682Z   ANDROID_NDK_HOME: /usr/local/lib/android/sdk/ndk/28.2.13676358
+2026-09-27T05:19:53.5107278Z ##[endgroup]
+2026-09-27T05:19:53.7644485Z (node:5998) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-09-27T05:19:53.7646019Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-09-27T05:19:53.7765046Z With the provided path, there will be 1 file uploaded
+2026-09-27T05:19:53.7843136Z Artifact name is valid!
+2026-09-27T05:19:53.7867323Z Root directory input is valid!
+2026-09-27T05:19:54.1493923Z Beginning upload of artifact content to blob storage
+2026-09-27T05:19:54.4228701Z (node:5998) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-09-27T05:19:55.3027115Z Uploaded bytes 8388608
+2026-09-27T05:19:55.6208424Z Uploaded bytes 16777216
+2026-09-27T05:19:55.8518401Z Uploaded bytes 25165824
+2026-09-27T05:19:55.9673779Z Uploaded bytes 26958396
+2026-09-27T05:19:56.0447764Z Finished uploading artifact content to blob storage!
+2026-09-27T05:19:56.0449602Z SHA256 digest of uploaded artifact zip is 6a00d509c969c4f5bc5752a8b2da26f5d7afdf756e1c42a9c276b6cd4150ca5f
+2026-09-27T05:19:56.0450933Z Finalizing artifact upload
+2026-09-27T05:19:56.3090246Z Artifact manager-apk-debug.zip successfully finalized. Artifact ID 10924480584
+2026-09-27T05:19:56.3091978Z Artifact manager-apk-debug has been successfully uploaded! Final size is 26958396 bytes. Artifact ID is 10924480584
+2026-09-27T05:19:56.3098980Z Artifact download URL: https://github.com/zephyr4289/retro-manager/actions/runs/36296625061/artifacts/10924480584

@@ -1,0 +1,113 @@
+﻿2026-09-27T05:17:46.5094805Z ##[group]Run ./gradlew :app:assembleDebug --stacktrace
+2026-09-27T05:17:46.5095259Z [36;1m./gradlew :app:assembleDebug --stacktrace[0m
+2026-09-27T05:17:46.5157854Z shell: /usr/bin/bash -e {0}
+2026-09-27T05:17:46.5158122Z env:
+2026-09-27T05:17:46.5158441Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-09-27T05:17:46.5158993Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-09-27T05:17:46.5159437Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+2026-09-27T05:17:46.5159766Z   GRADLE_USER_HOME: /home/runner/.gradle
+2026-09-27T05:17:46.5160081Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+2026-09-27T05:17:46.5160390Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+2026-09-27T05:17:46.5160856Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+2026-09-27T05:17:46.5161346Z   DEVELOCITY_INJECTION_CUSTOM_VALUE: gradle-actions
+2026-09-27T05:17:46.5161675Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+2026-09-27T05:17:46.5162017Z   ANDROID_HOME: /usr/local/lib/android/sdk
+2026-09-27T05:17:46.5162335Z   ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
+2026-09-27T05:17:46.5163185Z   ANDROID_NDK_HOME: /usr/local/lib/android/sdk/ndk/28.2.13676358
+2026-09-27T05:17:46.5163537Z ##[endgroup]
+2026-09-27T05:17:48.4994298Z > Task :app:preBuild UP-TO-DATE
+2026-09-27T05:17:48.4995230Z > Task :app:preDebugBuild UP-TO-DATE
+2026-09-27T05:17:48.4996089Z > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+2026-09-27T05:17:48.5017936Z > Task :core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-09-27T05:17:49.8969744Z > Task :core:processResources NO-SOURCE
+2026-09-27T05:17:49.8992659Z > Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-09-27T05:17:49.9003888Z > Task :runtime:retropack-runtime-common:preBuild UP-TO-DATE
+2026-09-27T05:17:49.9023506Z > Task :runtime:retropack-runtime-common:preDebugBuild UP-TO-DATE
+2026-09-27T05:17:49.9024872Z > Task :runtime:retropack-runtime-common:writeDebugAarMetadata UP-TO-DATE
+2026-09-27T05:17:58.2993399Z 
+2026-09-27T05:17:58.3023826Z > Task :core:compileKotlin
+2026-09-27T05:17:58.3054879Z w: file:///home/runner/work/retro-manager/retro-manager/core/src/main/kotlin/com/retropack/domain/rom/ArchiveExtractor.kt:281:62 'var fileNameW: String!' is deprecated. Deprecated in Java.
+2026-09-27T05:17:58.3079708Z w: file:///home/runner/work/retro-manager/retro-manager/core/src/main/kotlin/com/retropack/domain/rom/ArchiveExtractor.kt:332:9 'constructor(p0: SeekableByteChannel!): SevenZFile' is deprecated. Deprecated in Java.
+2026-09-27T05:17:58.3085679Z w: file:///home/runner/work/retro-manager/retro-manager/core/src/main/kotlin/com/retropack/domain/rom/ArchiveExtractor.kt:371:9 'constructor(p0: File!): SevenZFile' is deprecated. Deprecated in Java.
+2026-09-27T05:17:59.0019785Z 
+2026-09-27T05:17:59.0083781Z > Task :app:checkDebugAarMetadata
+2026-09-27T05:17:59.0113608Z > Task :core:compileJava NO-SOURCE
+2026-09-27T05:17:59.0136590Z > Task :core:classes UP-TO-DATE
+2026-09-27T05:17:59.0164699Z > Task :core:jar
+2026-09-27T05:17:59.1010422Z > Task :app:generateDebugResValues
+2026-09-27T05:17:59.1051518Z > Task :runtime:retropack-runtime-common:generateDebugResValues UP-TO-DATE
+2026-09-27T05:17:59.1093688Z > Task :runtime:retropack-runtime-common:generateDebugResources UP-TO-DATE
+2026-09-27T05:17:59.1144055Z > Task :runtime:retropack-runtime-common:packageDebugResources UP-TO-DATE
+2026-09-27T05:17:59.1989440Z > Task :app:mapDebugSourceSetPaths
+2026-09-27T05:17:59.2013632Z > Task :app:generateDebugResources
+2026-09-27T05:18:00.5974272Z > Task :app:packageDebugResources
+2026-09-27T05:18:00.6008420Z > Task :app:createDebugCompatibleScreenManifests
+2026-09-27T05:18:00.6053569Z > Task :app:extractDeepLinksDebug
+2026-09-27T05:18:00.6113992Z > Task :runtime:retropack-runtime-common:extractDeepLinksDebug UP-TO-DATE
+2026-09-27T05:18:00.6143743Z > Task :runtime:retropack-runtime-common:processDebugManifest UP-TO-DATE
+2026-09-27T05:18:00.6194224Z > Task :app:parseDebugLocalResources
+2026-09-27T05:18:00.7970547Z > Task :app:mergeDebugResources
+2026-09-27T05:18:00.8981170Z > Task :app:processDebugMainManifest
+2026-09-27T05:18:00.8993328Z > Task :app:processDebugManifest
+2026-09-27T05:18:00.9010198Z > Task :runtime:retropack-runtime-common:compileDebugLibraryResources UP-TO-DATE
+2026-09-27T05:18:00.9011944Z > Task :runtime:retropack-runtime-common:parseDebugLocalResources UP-TO-DATE
+2026-09-27T05:18:00.9013831Z > Task :runtime:retropack-runtime-common:generateDebugRFile UP-TO-DATE
+2026-09-27T05:18:00.9015471Z > Task :runtime:retropack-runtime-common:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-09-27T05:18:00.9016997Z > Task :runtime:retropack-runtime-common:compileDebugKotlin UP-TO-DATE
+2026-09-27T05:18:00.9018236Z > Task :runtime:retropack-runtime-common:javaPreCompileDebug UP-TO-DATE
+2026-09-27T05:18:00.9019670Z > Task :runtime:retropack-runtime-common:compileDebugJavaWithJavac NO-SOURCE
+2026-09-27T05:18:00.9021088Z > Task :runtime:retropack-runtime-common:bundleLibCompileToJarDebug UP-TO-DATE
+2026-09-27T05:18:00.9022202Z > Task :app:javaPreCompileDebug
+2026-09-27T05:18:00.9023199Z > Task :app:mergeDebugShaders
+2026-09-27T05:18:00.9024002Z > Task :app:compileDebugShaders NO-SOURCE
+2026-09-27T05:18:00.9025139Z > Task :app:generateDebugAssets UP-TO-DATE
+2026-09-27T05:18:00.9026156Z > Task :runtime:retropack-runtime-common:mergeDebugShaders UP-TO-DATE
+2026-09-27T05:18:00.9027342Z > Task :runtime:retropack-runtime-common:compileDebugShaders NO-SOURCE
+2026-09-27T05:18:00.9028374Z > Task :app:processDebugManifestForPackage
+2026-09-27T05:18:01.0994462Z > Task :runtime:retropack-runtime-common:generateDebugAssets UP-TO-DATE
+2026-09-27T05:18:01.1024461Z > Task :runtime:retropack-runtime-common:packageDebugAssets UP-TO-DATE
+2026-09-27T05:18:01.2993791Z > Task :app:mergeDebugAssets
+2026-09-27T05:18:01.3005487Z > Task :runtime:retropack-runtime-common:bundleLibRuntimeToJarDebug UP-TO-DATE
+2026-09-27T05:18:01.3023800Z > Task :app:desugarDebugFileDependencies
+2026-09-27T05:18:01.3049511Z > Task :runtime:retropack-runtime-common:processDebugJavaRes UP-TO-DATE
+2026-09-27T05:18:01.4984288Z > Task :app:processDebugResources
+2026-09-27T05:18:01.5976754Z > Task :app:compressDebugAssets
+2026-09-27T05:18:02.9983871Z > Task :app:checkDebugDuplicateClasses
+2026-09-27T05:18:32.9973055Z > Task :app:compileDebugKotlin
+2026-09-27T05:18:34.3976482Z w: file:///home/runner/work/retro-manager/retro-manager/app/src/main/kotlin/com/retropack/manager/ui/components/MultiDiscManagerSection.kt:159:41 'val outlinedButtonBorder: BorderStroke' is deprecated. Please use the version that takes an `enabled` param to get the `BorderStroke` with the correct opacity.
+2026-09-27T05:18:34.4026751Z w: file:///home/runner/work/retro-manager/retro-manager/app/src/main/kotlin/com/retropack/manager/ui/components/MultiDiscManagerSection.kt:195:61 'val Icons.Filled.PlaylistPlay: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.PlaylistPlay.
+2026-09-27T05:18:35.9993436Z 
+2026-09-27T05:18:36.0023845Z > Task :app:mergeExtDexDebug
+2026-09-27T05:19:30.0979902Z > Task :app:compileDebugJavaWithJavac NO-SOURCE
+2026-09-27T05:19:34.1969923Z > Task :app:dexBuilderDebug
+2026-09-27T05:19:34.3993988Z > Task :app:mergeDebugGlobalSynthetics
+2026-09-27T05:19:34.4073732Z > Task :app:processDebugJavaRes
+2026-09-27T05:19:36.6014220Z > Task :runtime:retropack-runtime-common:bundleLibRuntimeToDirDebug UP-TO-DATE
+2026-09-27T05:19:36.8983522Z > Task :app:mergeProjectDexDebug
+2026-09-27T05:19:36.9004848Z > Task :app:mergeDebugJniLibFolders
+2026-09-27T05:19:36.9005746Z > Task :runtime:retropack-runtime-common:mergeDebugJniLibFolders UP-TO-DATE
+2026-09-27T05:19:36.9006566Z > Task :runtime:retropack-runtime-common:mergeDebugNativeLibs NO-SOURCE
+2026-09-27T05:19:36.9012231Z > Task :runtime:retropack-runtime-common:copyDebugJniLibsProjectOnly UP-TO-DATE
+2026-09-27T05:19:37.0980963Z > Task :app:mergeLibDexDebug
+2026-09-27T05:19:37.1993823Z > Task :app:mergeDebugNativeLibs
+2026-09-27T05:19:37.2023503Z > Task :app:validateSigningDebug
+2026-09-27T05:19:37.2053355Z > Task :app:writeDebugAppMetadata
+2026-09-27T05:19:37.2083305Z > Task :app:writeDebugSigningConfigVersions
+2026-09-27T05:19:37.2973873Z > Task :app:stripDebugDebugSymbols
+2026-09-27T05:19:38.6993741Z > Task :app:mergeDebugJavaResource
+2026-09-27T05:19:41.4941352Z > Task :app:packageDebug
+2026-09-27T05:19:41.4997402Z > Task :app:createDebugApkListingFileRedirect
+2026-09-27T05:19:41.5023516Z > Task :app:assembleDebug
+2026-09-27T05:19:41.5024861Z gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_7-1790486267189.json
+2026-09-27T05:19:41.5036910Z 
+2026-09-27T05:19:41.5054909Z [Incubating] Problems report is available at: file:///home/runner/work/retro-manager/retro-manager/build/reports/problems/problems-report.html
+2026-09-27T05:19:41.5055902Z 
+2026-09-27T05:19:41.5056542Z Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+2026-09-27T05:19:41.5057192Z 
+2026-09-27T05:19:41.5058183Z You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+2026-09-27T05:19:41.5059106Z 
+2026-09-27T05:19:41.5060675Z For more on this, please refer to https://docs.gradle.org/9.5.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+2026-09-27T05:19:41.5061671Z 
+2026-09-27T05:19:41.5061913Z BUILD SUCCESSFUL in 1m 54s
+2026-09-27T05:19:41.5062496Z 56 actionable tasks: 37 executed, 19 up-to-date
+2026-09-27T05:19:41.5064099Z Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.5.1/userguide/configuration_cache_enabling.html

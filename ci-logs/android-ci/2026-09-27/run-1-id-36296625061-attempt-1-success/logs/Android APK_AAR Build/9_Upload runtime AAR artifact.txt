@@ -1,0 +1,36 @@
+﻿2026-09-27T05:17:20.8271693Z ##[group]Run actions/upload-artifact@v4
+2026-09-27T05:17:20.8272044Z with:
+2026-09-27T05:17:20.8272246Z   name: runtime-aar-debug
+2026-09-27T05:17:20.8272512Z   path: runtime/*/build/outputs/aar/*.aar
+2026-09-27T05:17:20.8273292Z   if-no-files-found: warn
+2026-09-27T05:17:20.8273660Z   compression-level: 6
+2026-09-27T05:17:20.8273878Z   overwrite: false
+2026-09-27T05:17:20.8274087Z   include-hidden-files: false
+2026-09-27T05:17:20.8274315Z env:
+2026-09-27T05:17:20.8274607Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-09-27T05:17:20.8275085Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-09-27T05:17:20.8275499Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+2026-09-27T05:17:20.8275790Z   GRADLE_USER_HOME: /home/runner/.gradle
+2026-09-27T05:17:20.8276272Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+2026-09-27T05:17:20.8276563Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+2026-09-27T05:17:20.8276983Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+2026-09-27T05:17:20.8277625Z   DEVELOCITY_INJECTION_CUSTOM_VALUE: gradle-actions
+2026-09-27T05:17:20.8277940Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+2026-09-27T05:17:20.8278214Z   ANDROID_HOME: /usr/local/lib/android/sdk
+2026-09-27T05:17:20.8278496Z   ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
+2026-09-27T05:17:20.8278839Z   ANDROID_NDK_HOME: /usr/local/lib/android/sdk/ndk/28.2.13676358
+2026-09-27T05:17:20.8279160Z ##[endgroup]
+2026-09-27T05:17:20.9984821Z (node:5377) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-09-27T05:17:20.9986207Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-09-27T05:17:21.0212102Z With the provided path, there will be 11 files uploaded
+2026-09-27T05:17:21.0233017Z Artifact name is valid!
+2026-09-27T05:17:21.0233848Z Root directory input is valid!
+2026-09-27T05:17:21.3992309Z Beginning upload of artifact content to blob storage
+2026-09-27T05:17:21.4776415Z (node:5377) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-09-27T05:17:22.1948423Z Uploaded bytes 1362024
+2026-09-27T05:17:22.2736538Z Finished uploading artifact content to blob storage!
+2026-09-27T05:17:22.2737890Z SHA256 digest of uploaded artifact zip is 551f9ef81dc19e98766472c216a343bcd2584c5290b51676f6430291e17dedbe
+2026-09-27T05:17:22.2739486Z Finalizing artifact upload
+2026-09-27T05:17:22.5336929Z Artifact runtime-aar-debug.zip successfully finalized. Artifact ID 10924760085
+2026-09-27T05:17:22.5338712Z Artifact runtime-aar-debug has been successfully uploaded! Final size is 1362024 bytes. Artifact ID is 10924760085
+2026-09-27T05:17:22.5346422Z Artifact download URL: https://github.com/zephyr4289/retro-manager/actions/runs/36296625061/artifacts/10924760085

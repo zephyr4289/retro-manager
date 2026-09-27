@@ -1,0 +1,418 @@
+﻿2026-09-27T05:17:22.5475482Z ##[group]Run ./gradlew :template-apk:assembleDebug --stacktrace
+2026-09-27T05:17:22.5475969Z [36;1m./gradlew :template-apk:assembleDebug --stacktrace[0m
+2026-09-27T05:17:22.5538960Z shell: /usr/bin/bash -e {0}
+2026-09-27T05:17:22.5539231Z env:
+2026-09-27T05:17:22.5539540Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-09-27T05:17:22.5540037Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-09-27T05:17:22.5540472Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+2026-09-27T05:17:22.5540780Z   GRADLE_USER_HOME: /home/runner/.gradle
+2026-09-27T05:17:22.5541077Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+2026-09-27T05:17:22.5541378Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+2026-09-27T05:17:22.5541815Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+2026-09-27T05:17:22.5542308Z   DEVELOCITY_INJECTION_CUSTOM_VALUE: gradle-actions
+2026-09-27T05:17:22.5542862Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+2026-09-27T05:17:22.5543290Z   ANDROID_HOME: /usr/local/lib/android/sdk
+2026-09-27T05:17:22.5543585Z   ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
+2026-09-27T05:17:22.5543935Z   ANDROID_NDK_HOME: /usr/local/lib/android/sdk/ndk/28.2.13676358
+2026-09-27T05:17:22.5544268Z ##[endgroup]
+2026-09-27T05:17:25.2172456Z > Task :template-apk:preBuild UP-TO-DATE
+2026-09-27T05:17:25.2220097Z > Task :template-apk:preDebugBuild UP-TO-DATE
+2026-09-27T05:17:25.2273033Z > Task :template-apk:mergeDebugNativeDebugMetadata NO-SOURCE
+2026-09-27T05:17:25.2303939Z > Task :template-apk:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-09-27T05:17:25.2305440Z > Task :runtime:retropack-runtime-common:preBuild UP-TO-DATE
+2026-09-27T05:17:25.2306619Z > Task :runtime:retropack-runtime-common:preDebugBuild UP-TO-DATE
+2026-09-27T05:17:25.2307815Z > Task :runtime:retropack-runtime-common:writeDebugAarMetadata UP-TO-DATE
+2026-09-27T05:17:25.2309499Z > Task :runtime:retropack-runtime-fbneo:preBuild UP-TO-DATE
+2026-09-27T05:17:25.2310578Z > Task :runtime:retropack-runtime-fbneo:preDebugBuild UP-TO-DATE
+2026-09-27T05:17:25.2313201Z > Task :runtime:retropack-runtime-fbneo:writeDebugAarMetadata UP-TO-DATE
+2026-09-27T05:17:25.2314496Z > Task :runtime:retropack-runtime-fceumm:preBuild UP-TO-DATE
+2026-09-27T05:17:25.2315629Z > Task :runtime:retropack-runtime-fceumm:preDebugBuild UP-TO-DATE
+2026-09-27T05:17:25.2317028Z > Task :runtime:retropack-runtime-fceumm:writeDebugAarMetadata UP-TO-DATE
+2026-09-27T05:17:25.2318258Z > Task :runtime:retropack-runtime-genesis:preBuild UP-TO-DATE
+2026-09-27T05:17:25.2319367Z > Task :runtime:retropack-runtime-genesis:preDebugBuild UP-TO-DATE
+2026-09-27T05:17:25.2320614Z > Task :runtime:retropack-runtime-genesis:writeDebugAarMetadata UP-TO-DATE
+2026-09-27T05:17:25.2321866Z > Task :runtime:retropack-runtime-melonds:preBuild UP-TO-DATE
+2026-09-27T05:17:25.2323193Z > Task :runtime:retropack-runtime-melonds:preDebugBuild UP-TO-DATE
+2026-09-27T05:17:25.2324383Z > Task :runtime:retropack-runtime-melonds:writeDebugAarMetadata UP-TO-DATE
+2026-09-27T05:17:25.2325484Z > Task :runtime:retropack-runtime-mgba:preBuild UP-TO-DATE
+2026-09-27T05:17:25.2326503Z > Task :runtime:retropack-runtime-mgba:preDebugBuild UP-TO-DATE
+2026-09-27T05:17:25.2327659Z > Task :runtime:retropack-runtime-mgba:writeDebugAarMetadata UP-TO-DATE
+2026-09-27T05:17:25.2328805Z > Task :runtime:retropack-runtime-mupen64:preBuild UP-TO-DATE
+2026-09-27T05:17:25.2329954Z > Task :runtime:retropack-runtime-mupen64:preDebugBuild UP-TO-DATE
+2026-09-27T05:17:25.2331171Z > Task :runtime:retropack-runtime-mupen64:writeDebugAarMetadata UP-TO-DATE
+2026-09-27T05:17:25.2332323Z > Task :runtime:retropack-runtime-pce:preBuild UP-TO-DATE
+2026-09-27T05:17:25.2333658Z > Task :runtime:retropack-runtime-pce:preDebugBuild UP-TO-DATE
+2026-09-27T05:17:25.2334841Z > Task :runtime:retropack-runtime-pce:writeDebugAarMetadata UP-TO-DATE
+2026-09-27T05:17:25.2335969Z > Task :runtime:retropack-runtime-pcsx:preBuild UP-TO-DATE
+2026-09-27T05:17:25.2337042Z > Task :runtime:retropack-runtime-pcsx:preDebugBuild UP-TO-DATE
+2026-09-27T05:17:25.2338548Z > Task :runtime:retropack-runtime-pcsx:writeDebugAarMetadata UP-TO-DATE
+2026-09-27T05:17:25.2339677Z > Task :runtime:retropack-runtime-ppsspp:preBuild UP-TO-DATE
+2026-09-27T05:17:25.2340763Z > Task :runtime:retropack-runtime-ppsspp:preDebugBuild UP-TO-DATE
+2026-09-27T05:17:25.2341943Z > Task :runtime:retropack-runtime-ppsspp:writeDebugAarMetadata UP-TO-DATE
+2026-09-27T05:17:25.2343339Z > Task :runtime:retropack-runtime-snes9x:preBuild UP-TO-DATE
+2026-09-27T05:17:25.3123920Z > Task :runtime:retropack-runtime-snes9x:preDebugBuild UP-TO-DATE
+2026-09-27T05:17:25.3161100Z > Task :runtime:retropack-runtime-snes9x:writeDebugAarMetadata UP-TO-DATE
+2026-09-27T05:17:25.3198424Z > Task :template-apk:checkDebugAarMetadata
+2026-09-27T05:17:25.3199564Z > Task :template-apk:generateDebugResValues
+2026-09-27T05:17:25.3200769Z > Task :runtime:retropack-runtime-common:generateDebugResValues UP-TO-DATE
+2026-09-27T05:17:25.3202062Z > Task :runtime:retropack-runtime-common:generateDebugResources UP-TO-DATE
+2026-09-27T05:17:25.3203650Z > Task :runtime:retropack-runtime-common:packageDebugResources UP-TO-DATE
+2026-09-27T05:17:25.3204950Z > Task :runtime:retropack-runtime-fbneo:generateDebugResValues UP-TO-DATE
+2026-09-27T05:17:25.3206259Z > Task :runtime:retropack-runtime-fbneo:generateDebugResources UP-TO-DATE
+2026-09-27T05:17:25.3207557Z > Task :runtime:retropack-runtime-fbneo:packageDebugResources UP-TO-DATE
+2026-09-27T05:17:25.3208850Z > Task :runtime:retropack-runtime-fceumm:generateDebugResValues UP-TO-DATE
+2026-09-27T05:17:25.3210165Z > Task :runtime:retropack-runtime-fceumm:generateDebugResources UP-TO-DATE
+2026-09-27T05:17:25.3211469Z > Task :runtime:retropack-runtime-fceumm:packageDebugResources UP-TO-DATE
+2026-09-27T05:17:25.3212984Z > Task :runtime:retropack-runtime-genesis:generateDebugResValues UP-TO-DATE
+2026-09-27T05:17:25.3214781Z > Task :runtime:retropack-runtime-genesis:generateDebugResources UP-TO-DATE
+2026-09-27T05:17:25.3216103Z > Task :runtime:retropack-runtime-genesis:packageDebugResources UP-TO-DATE
+2026-09-27T05:17:25.3217428Z > Task :runtime:retropack-runtime-melonds:generateDebugResValues UP-TO-DATE
+2026-09-27T05:17:25.3218724Z > Task :runtime:retropack-runtime-melonds:generateDebugResources UP-TO-DATE
+2026-09-27T05:17:25.3220036Z > Task :runtime:retropack-runtime-melonds:packageDebugResources UP-TO-DATE
+2026-09-27T05:17:25.3221368Z > Task :runtime:retropack-runtime-mgba:generateDebugResValues UP-TO-DATE
+2026-09-27T05:17:25.3222618Z > Task :runtime:retropack-runtime-mgba:generateDebugResources UP-TO-DATE
+2026-09-27T05:17:25.3224164Z > Task :runtime:retropack-runtime-mgba:packageDebugResources UP-TO-DATE
+2026-09-27T05:17:25.3225449Z > Task :runtime:retropack-runtime-mupen64:generateDebugResValues UP-TO-DATE
+2026-09-27T05:17:25.3226724Z > Task :runtime:retropack-runtime-mupen64:generateDebugResources UP-TO-DATE
+2026-09-27T05:17:25.3227985Z > Task :runtime:retropack-runtime-mupen64:packageDebugResources UP-TO-DATE
+2026-09-27T05:17:25.3229244Z > Task :runtime:retropack-runtime-pce:generateDebugResValues UP-TO-DATE
+2026-09-27T05:17:25.3230458Z > Task :runtime:retropack-runtime-pce:generateDebugResources UP-TO-DATE
+2026-09-27T05:17:25.3231672Z > Task :runtime:retropack-runtime-pce:packageDebugResources UP-TO-DATE
+2026-09-27T05:17:25.3233152Z > Task :runtime:retropack-runtime-pcsx:generateDebugResValues UP-TO-DATE
+2026-09-27T05:17:25.3234520Z > Task :runtime:retropack-runtime-pcsx:generateDebugResources UP-TO-DATE
+2026-09-27T05:17:25.3235874Z > Task :runtime:retropack-runtime-pcsx:packageDebugResources UP-TO-DATE
+2026-09-27T05:17:25.3237198Z > Task :runtime:retropack-runtime-ppsspp:generateDebugResValues UP-TO-DATE
+2026-09-27T05:17:25.3238627Z > Task :runtime:retropack-runtime-ppsspp:generateDebugResources UP-TO-DATE
+2026-09-27T05:17:25.3239950Z > Task :runtime:retropack-runtime-ppsspp:packageDebugResources UP-TO-DATE
+2026-09-27T05:17:25.3241305Z > Task :runtime:retropack-runtime-snes9x:generateDebugResValues UP-TO-DATE
+2026-09-27T05:17:25.3242845Z > Task :runtime:retropack-runtime-snes9x:generateDebugResources UP-TO-DATE
+2026-09-27T05:17:25.3246286Z > Task :runtime:retropack-runtime-snes9x:packageDebugResources UP-TO-DATE
+2026-09-27T05:17:25.3247451Z > Task :template-apk:mapDebugSourceSetPaths
+2026-09-27T05:17:25.3248439Z > Task :template-apk:generateDebugResources
+2026-09-27T05:17:25.4137011Z > Task :template-apk:packageDebugResources
+2026-09-27T05:17:25.4138590Z > Task :template-apk:createDebugCompatibleScreenManifests
+2026-09-27T05:17:25.4139779Z > Task :template-apk:extractDeepLinksDebug
+2026-09-27T05:17:25.4140824Z > Task :runtime:retropack-runtime-common:extractDeepLinksDebug
+2026-09-27T05:17:25.4142121Z > Task :runtime:retropack-runtime-common:processDebugManifest UP-TO-DATE
+2026-09-27T05:17:25.4143695Z > Task :runtime:retropack-runtime-fbneo:extractDeepLinksDebug
+2026-09-27T05:17:25.4145099Z > Task :runtime:retropack-runtime-fbneo:processDebugManifest UP-TO-DATE
+2026-09-27T05:17:25.5144293Z > Task :runtime:retropack-runtime-fceumm:extractDeepLinksDebug
+2026-09-27T05:17:25.5163974Z > Task :runtime:retropack-runtime-fceumm:processDebugManifest UP-TO-DATE
+2026-09-27T05:17:25.5214271Z > Task :runtime:retropack-runtime-genesis:extractDeepLinksDebug
+2026-09-27T05:17:25.5228006Z > Task :template-apk:parseDebugLocalResources
+2026-09-27T05:17:25.5244085Z > Task :runtime:retropack-runtime-genesis:processDebugManifest UP-TO-DATE
+2026-09-27T05:17:25.5273558Z > Task :runtime:retropack-runtime-melonds:extractDeepLinksDebug
+2026-09-27T05:17:25.5283882Z > Task :runtime:retropack-runtime-melonds:processDebugManifest UP-TO-DATE
+2026-09-27T05:17:25.5313839Z > Task :runtime:retropack-runtime-mgba:extractDeepLinksDebug
+2026-09-27T05:17:25.5316309Z > Task :runtime:retropack-runtime-mgba:processDebugManifest UP-TO-DATE
+2026-09-27T05:17:25.5317314Z > Task :runtime:retropack-runtime-mupen64:extractDeepLinksDebug
+2026-09-27T05:17:25.5318761Z > Task :runtime:retropack-runtime-mupen64:processDebugManifest UP-TO-DATE
+2026-09-27T05:17:25.5319693Z > Task :runtime:retropack-runtime-pce:extractDeepLinksDebug
+2026-09-27T05:17:25.5343825Z > Task :runtime:retropack-runtime-pce:processDebugManifest UP-TO-DATE
+2026-09-27T05:17:25.5344738Z > Task :runtime:retropack-runtime-pcsx:extractDeepLinksDebug
+2026-09-27T05:17:25.5345308Z > Task :runtime:retropack-runtime-pcsx:processDebugManifest UP-TO-DATE
+2026-09-27T05:17:25.5345841Z > Task :runtime:retropack-runtime-ppsspp:extractDeepLinksDebug
+2026-09-27T05:17:25.5346387Z > Task :runtime:retropack-runtime-ppsspp:processDebugManifest UP-TO-DATE
+2026-09-27T05:17:25.5346917Z > Task :runtime:retropack-runtime-snes9x:extractDeepLinksDebug
+2026-09-27T05:17:25.5347438Z > Task :runtime:retropack-runtime-snes9x:processDebugManifest UP-TO-DATE
+2026-09-27T05:17:25.5347885Z > Task :template-apk:mergeDebugResources
+2026-09-27T05:17:25.6153460Z 
+2026-09-27T05:17:25.6167152Z > Task :template-apk:processDebugMainManifest
+2026-09-27T05:17:25.6194637Z package="com.retropack.runtime" found in source AndroidManifest.xml: /home/runner/work/retro-manager/retro-manager/template-apk/src/main/AndroidManifest.xml.
+2026-09-27T05:17:25.6196826Z Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+2026-09-27T05:17:25.6199186Z Recommendation: remove package="com.retropack.runtime" from the source AndroidManifest.xml: /home/runner/work/retro-manager/retro-manager/template-apk/src/main/AndroidManifest.xml.
+2026-09-27T05:17:25.6201236Z /home/runner/work/retro-manager/retro-manager/template-apk/src/main/AndroidManifest.xml:11:9-42 Warning:
+2026-09-27T05:17:25.6203831Z 	android:extractNativeLibs should not be specified in this source AndroidManifest.xml file. See https://d.android.com/guide/topics/manifest/application-element#extractNativeLibs for more information.
+2026-09-27T05:17:25.6206788Z The AGP Upgrade Assistant can remove the attribute from the AndroidManifest.xml file and update the build file accordingly. See https://d.android.com/studio/build/agp-upgrade-assistant for more information.
+2026-09-27T05:17:25.6208256Z 
+2026-09-27T05:17:25.6208981Z > Task :template-apk:processDebugManifest
+2026-09-27T05:17:25.9134271Z > Task :template-apk:processDebugManifestForPackage
+2026-09-27T05:17:25.9135422Z > Task :runtime:retropack-runtime-common:compileDebugLibraryResources
+2026-09-27T05:17:26.0145126Z > Task :runtime:retropack-runtime-common:parseDebugLocalResources UP-TO-DATE
+2026-09-27T05:17:26.0173451Z > Task :runtime:retropack-runtime-common:generateDebugRFile UP-TO-DATE
+2026-09-27T05:17:26.0196591Z > Task :runtime:retropack-runtime-fbneo:parseDebugLocalResources UP-TO-DATE
+2026-09-27T05:17:26.0221850Z > Task :runtime:retropack-runtime-fbneo:compileDebugLibraryResources
+2026-09-27T05:17:26.0234093Z > Task :runtime:retropack-runtime-fbneo:generateDebugRFile UP-TO-DATE
+2026-09-27T05:17:26.0245298Z > Task :runtime:retropack-runtime-fceumm:compileDebugLibraryResources
+2026-09-27T05:17:26.0259788Z > Task :runtime:retropack-runtime-fceumm:parseDebugLocalResources UP-TO-DATE
+2026-09-27T05:17:26.0294116Z > Task :runtime:retropack-runtime-fceumm:generateDebugRFile UP-TO-DATE
+2026-09-27T05:17:26.0324418Z > Task :runtime:retropack-runtime-genesis:parseDebugLocalResources UP-TO-DATE
+2026-09-27T05:17:26.0344240Z > Task :runtime:retropack-runtime-genesis:compileDebugLibraryResources
+2026-09-27T05:17:26.0354434Z > Task :runtime:retropack-runtime-genesis:generateDebugRFile UP-TO-DATE
+2026-09-27T05:17:26.0355799Z > Task :runtime:retropack-runtime-melonds:parseDebugLocalResources UP-TO-DATE
+2026-09-27T05:17:26.0357212Z > Task :runtime:retropack-runtime-melonds:compileDebugLibraryResources
+2026-09-27T05:17:26.0358505Z > Task :runtime:retropack-runtime-melonds:generateDebugRFile UP-TO-DATE
+2026-09-27T05:17:26.0359760Z > Task :runtime:retropack-runtime-mgba:compileDebugLibraryResources
+2026-09-27T05:17:26.0361029Z > Task :runtime:retropack-runtime-mgba:parseDebugLocalResources UP-TO-DATE
+2026-09-27T05:17:26.0363161Z > Task :runtime:retropack-runtime-mgba:generateDebugRFile UP-TO-DATE
+2026-09-27T05:17:26.0364488Z > Task :runtime:retropack-runtime-mupen64:parseDebugLocalResources UP-TO-DATE
+2026-09-27T05:17:26.0365814Z > Task :runtime:retropack-runtime-mupen64:compileDebugLibraryResources
+2026-09-27T05:17:26.0367177Z > Task :runtime:retropack-runtime-mupen64:generateDebugRFile UP-TO-DATE
+2026-09-27T05:17:26.0368486Z > Task :runtime:retropack-runtime-pce:parseDebugLocalResources UP-TO-DATE
+2026-09-27T05:17:26.0369815Z > Task :runtime:retropack-runtime-pce:compileDebugLibraryResources
+2026-09-27T05:17:26.0370995Z > Task :runtime:retropack-runtime-pce:generateDebugRFile UP-TO-DATE
+2026-09-27T05:17:26.0372153Z > Task :runtime:retropack-runtime-pcsx:compileDebugLibraryResources
+2026-09-27T05:17:26.0373579Z > Task :runtime:retropack-runtime-pcsx:parseDebugLocalResources UP-TO-DATE
+2026-09-27T05:17:26.0378244Z > Task :runtime:retropack-runtime-pcsx:generateDebugRFile UP-TO-DATE
+2026-09-27T05:17:26.0403965Z > Task :runtime:retropack-runtime-ppsspp:parseDebugLocalResources UP-TO-DATE
+2026-09-27T05:17:26.0407993Z > Task :runtime:retropack-runtime-ppsspp:compileDebugLibraryResources
+2026-09-27T05:17:26.0409301Z > Task :runtime:retropack-runtime-ppsspp:generateDebugRFile UP-TO-DATE
+2026-09-27T05:17:26.0410594Z > Task :runtime:retropack-runtime-snes9x:parseDebugLocalResources UP-TO-DATE
+2026-09-27T05:17:26.0411795Z > Task :runtime:retropack-runtime-snes9x:compileDebugLibraryResources
+2026-09-27T05:17:26.0413183Z > Task :runtime:retropack-runtime-snes9x:generateDebugRFile UP-TO-DATE
+2026-09-27T05:17:26.1121092Z > Task :runtime:retropack-runtime-common:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-09-27T05:17:26.1156885Z > Task :runtime:retropack-runtime-common:compileDebugKotlin UP-TO-DATE
+2026-09-27T05:17:26.1175167Z > Task :runtime:retropack-runtime-common:javaPreCompileDebug UP-TO-DATE
+2026-09-27T05:17:26.1197594Z > Task :runtime:retropack-runtime-common:compileDebugJavaWithJavac NO-SOURCE
+2026-09-27T05:17:26.1223858Z > Task :runtime:retropack-runtime-common:bundleLibCompileToJarDebug UP-TO-DATE
+2026-09-27T05:17:26.1253977Z > Task :runtime:retropack-runtime-fbneo:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-09-27T05:17:26.1283800Z > Task :runtime:retropack-runtime-fbneo:compileDebugKotlin UP-TO-DATE
+2026-09-27T05:17:26.1285140Z > Task :runtime:retropack-runtime-fbneo:javaPreCompileDebug UP-TO-DATE
+2026-09-27T05:17:26.1314882Z > Task :runtime:retropack-runtime-fbneo:compileDebugJavaWithJavac NO-SOURCE
+2026-09-27T05:17:26.1343901Z > Task :runtime:retropack-runtime-fceumm:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-09-27T05:17:26.1373818Z > Task :runtime:retropack-runtime-fbneo:bundleLibCompileToJarDebug
+2026-09-27T05:17:26.2144186Z > Task :runtime:retropack-runtime-fceumm:compileDebugKotlin UP-TO-DATE
+2026-09-27T05:17:26.2173908Z > Task :runtime:retropack-runtime-fceumm:javaPreCompileDebug UP-TO-DATE
+2026-09-27T05:17:26.2183785Z > Task :runtime:retropack-runtime-fceumm:compileDebugJavaWithJavac NO-SOURCE
+2026-09-27T05:17:26.2199936Z > Task :runtime:retropack-runtime-genesis:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-09-27T05:17:26.2201119Z > Task :runtime:retropack-runtime-fceumm:bundleLibCompileToJarDebug
+2026-09-27T05:17:26.2201983Z > Task :runtime:retropack-runtime-genesis:compileDebugKotlin UP-TO-DATE
+2026-09-27T05:17:26.2202595Z > Task :runtime:retropack-runtime-genesis:javaPreCompileDebug UP-TO-DATE
+2026-09-27T05:17:26.2203384Z > Task :runtime:retropack-runtime-genesis:compileDebugJavaWithJavac NO-SOURCE
+2026-09-27T05:17:26.2204085Z > Task :runtime:retropack-runtime-melonds:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-09-27T05:17:26.2204728Z > Task :runtime:retropack-runtime-genesis:bundleLibCompileToJarDebug
+2026-09-27T05:17:26.2205275Z > Task :runtime:retropack-runtime-melonds:compileDebugKotlin UP-TO-DATE
+2026-09-27T05:17:26.2205841Z > Task :runtime:retropack-runtime-melonds:javaPreCompileDebug UP-TO-DATE
+2026-09-27T05:17:26.2206437Z > Task :runtime:retropack-runtime-melonds:compileDebugJavaWithJavac NO-SOURCE
+2026-09-27T05:17:26.2207487Z > Task :runtime:retropack-runtime-mgba:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-09-27T05:17:26.2208129Z > Task :runtime:retropack-runtime-melonds:bundleLibCompileToJarDebug
+2026-09-27T05:17:26.3120914Z > Task :runtime:retropack-runtime-mgba:compileDebugKotlin UP-TO-DATE
+2026-09-27T05:17:26.3122926Z > Task :runtime:retropack-runtime-mgba:javaPreCompileDebug UP-TO-DATE
+2026-09-27T05:17:26.3165342Z > Task :runtime:retropack-runtime-mgba:compileDebugJavaWithJavac NO-SOURCE
+2026-09-27T05:17:26.3187341Z > Task :runtime:retropack-runtime-mupen64:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-09-27T05:17:26.3202374Z > Task :runtime:retropack-runtime-mgba:bundleLibCompileToJarDebug
+2026-09-27T05:17:26.3223754Z > Task :template-apk:processDebugResources
+2026-09-27T05:17:26.3253922Z > Task :runtime:retropack-runtime-mupen64:compileDebugKotlin UP-TO-DATE
+2026-09-27T05:17:26.3276949Z > Task :runtime:retropack-runtime-mupen64:javaPreCompileDebug UP-TO-DATE
+2026-09-27T05:17:26.3290991Z > Task :runtime:retropack-runtime-mupen64:compileDebugJavaWithJavac NO-SOURCE
+2026-09-27T05:17:26.3314134Z > Task :runtime:retropack-runtime-pce:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-09-27T05:17:26.3357880Z > Task :runtime:retropack-runtime-mupen64:bundleLibCompileToJarDebug
+2026-09-27T05:17:26.3359021Z > Task :runtime:retropack-runtime-pce:compileDebugKotlin UP-TO-DATE
+2026-09-27T05:17:26.3359961Z > Task :runtime:retropack-runtime-pce:javaPreCompileDebug UP-TO-DATE
+2026-09-27T05:17:26.3360968Z > Task :runtime:retropack-runtime-pce:compileDebugJavaWithJavac NO-SOURCE
+2026-09-27T05:17:26.3362152Z > Task :runtime:retropack-runtime-pcsx:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-09-27T05:17:26.3363516Z > Task :runtime:retropack-runtime-pce:bundleLibCompileToJarDebug
+2026-09-27T05:17:26.3364442Z > Task :runtime:retropack-runtime-pcsx:compileDebugKotlin UP-TO-DATE
+2026-09-27T05:17:26.3365410Z > Task :runtime:retropack-runtime-pcsx:javaPreCompileDebug UP-TO-DATE
+2026-09-27T05:17:26.3366480Z > Task :runtime:retropack-runtime-pcsx:compileDebugJavaWithJavac NO-SOURCE
+2026-09-27T05:17:26.4156113Z > Task :runtime:retropack-runtime-ppsspp:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-09-27T05:17:26.4175852Z > Task :runtime:retropack-runtime-pcsx:bundleLibCompileToJarDebug
+2026-09-27T05:17:26.4178077Z > Task :runtime:retropack-runtime-ppsspp:compileDebugKotlin UP-TO-DATE
+2026-09-27T05:17:26.4179226Z > Task :runtime:retropack-runtime-ppsspp:javaPreCompileDebug UP-TO-DATE
+2026-09-27T05:17:26.4180137Z > Task :runtime:retropack-runtime-ppsspp:compileDebugJavaWithJavac NO-SOURCE
+2026-09-27T05:17:26.4180864Z > Task :runtime:retropack-runtime-snes9x:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-09-27T05:17:26.4181517Z > Task :runtime:retropack-runtime-ppsspp:bundleLibCompileToJarDebug
+2026-09-27T05:17:26.4182058Z > Task :runtime:retropack-runtime-snes9x:compileDebugKotlin UP-TO-DATE
+2026-09-27T05:17:26.4182943Z > Task :runtime:retropack-runtime-snes9x:javaPreCompileDebug UP-TO-DATE
+2026-09-27T05:17:26.4183746Z > Task :runtime:retropack-runtime-snes9x:compileDebugJavaWithJavac NO-SOURCE
+2026-09-27T05:17:26.4184336Z > Task :runtime:retropack-runtime-snes9x:bundleLibCompileToJarDebug
+2026-09-27T05:17:26.4184760Z > Task :template-apk:javaPreCompileDebug
+2026-09-27T05:17:26.4185106Z > Task :template-apk:mergeDebugShaders
+2026-09-27T05:17:26.5123234Z > Task :template-apk:compileDebugShaders NO-SOURCE
+2026-09-27T05:17:26.5154923Z > Task :template-apk:generateDebugAssets UP-TO-DATE
+2026-09-27T05:17:26.5213973Z > Task :runtime:retropack-runtime-common:mergeDebugShaders UP-TO-DATE
+2026-09-27T05:17:26.5243212Z > Task :runtime:retropack-runtime-common:compileDebugShaders NO-SOURCE
+2026-09-27T05:17:26.5259004Z > Task :runtime:retropack-runtime-common:generateDebugAssets UP-TO-DATE
+2026-09-27T05:17:26.5284333Z > Task :runtime:retropack-runtime-common:packageDebugAssets UP-TO-DATE
+2026-09-27T05:17:26.5310544Z > Task :runtime:retropack-runtime-fbneo:mergeDebugShaders UP-TO-DATE
+2026-09-27T05:17:26.5334747Z > Task :runtime:retropack-runtime-fbneo:compileDebugShaders NO-SOURCE
+2026-09-27T05:17:26.5364078Z > Task :runtime:retropack-runtime-fbneo:generateDebugAssets UP-TO-DATE
+2026-09-27T05:17:26.5394156Z > Task :runtime:retropack-runtime-fbneo:packageDebugAssets UP-TO-DATE
+2026-09-27T05:17:26.5415991Z > Task :runtime:retropack-runtime-fceumm:mergeDebugShaders UP-TO-DATE
+2026-09-27T05:17:26.5417374Z > Task :runtime:retropack-runtime-fceumm:compileDebugShaders NO-SOURCE
+2026-09-27T05:17:26.5418650Z > Task :runtime:retropack-runtime-fceumm:generateDebugAssets UP-TO-DATE
+2026-09-27T05:17:26.5419954Z > Task :runtime:retropack-runtime-fceumm:packageDebugAssets UP-TO-DATE
+2026-09-27T05:17:26.5421222Z > Task :runtime:retropack-runtime-genesis:mergeDebugShaders UP-TO-DATE
+2026-09-27T05:17:26.5422422Z > Task :runtime:retropack-runtime-genesis:compileDebugShaders NO-SOURCE
+2026-09-27T05:17:26.5424007Z > Task :runtime:retropack-runtime-genesis:generateDebugAssets UP-TO-DATE
+2026-09-27T05:17:26.5425210Z > Task :runtime:retropack-runtime-genesis:packageDebugAssets UP-TO-DATE
+2026-09-27T05:17:26.5426347Z > Task :runtime:retropack-runtime-melonds:mergeDebugShaders UP-TO-DATE
+2026-09-27T05:17:26.5453672Z > Task :runtime:retropack-runtime-melonds:compileDebugShaders NO-SOURCE
+2026-09-27T05:17:26.5478950Z > Task :runtime:retropack-runtime-melonds:generateDebugAssets UP-TO-DATE
+2026-09-27T05:17:26.5480518Z > Task :runtime:retropack-runtime-melonds:packageDebugAssets UP-TO-DATE
+2026-09-27T05:17:26.5481587Z > Task :runtime:retropack-runtime-mgba:mergeDebugShaders UP-TO-DATE
+2026-09-27T05:17:26.5482605Z > Task :runtime:retropack-runtime-mgba:compileDebugShaders NO-SOURCE
+2026-09-27T05:17:26.5574038Z > Task :runtime:retropack-runtime-mgba:generateDebugAssets UP-TO-DATE
+2026-09-27T05:17:26.5634121Z > Task :runtime:retropack-runtime-mgba:packageDebugAssets UP-TO-DATE
+2026-09-27T05:17:26.5682606Z > Task :runtime:retropack-runtime-mupen64:mergeDebugShaders UP-TO-DATE
+2026-09-27T05:17:26.5714120Z > Task :runtime:retropack-runtime-mupen64:compileDebugShaders NO-SOURCE
+2026-09-27T05:17:26.5753731Z > Task :runtime:retropack-runtime-mupen64:generateDebugAssets UP-TO-DATE
+2026-09-27T05:17:26.5814068Z > Task :runtime:retropack-runtime-mupen64:packageDebugAssets UP-TO-DATE
+2026-09-27T05:17:26.5833602Z > Task :runtime:retropack-runtime-pce:mergeDebugShaders UP-TO-DATE
+2026-09-27T05:17:26.5914706Z > Task :runtime:retropack-runtime-pce:compileDebugShaders NO-SOURCE
+2026-09-27T05:17:26.5964612Z > Task :runtime:retropack-runtime-pce:generateDebugAssets UP-TO-DATE
+2026-09-27T05:17:26.5985701Z > Task :runtime:retropack-runtime-pce:packageDebugAssets UP-TO-DATE
+2026-09-27T05:17:26.6025173Z > Task :runtime:retropack-runtime-pcsx:mergeDebugShaders UP-TO-DATE
+2026-09-27T05:17:26.6104936Z > Task :runtime:retropack-runtime-pcsx:compileDebugShaders NO-SOURCE
+2026-09-27T05:17:26.6168808Z > Task :runtime:retropack-runtime-pcsx:generateDebugAssets UP-TO-DATE
+2026-09-27T05:17:26.6213771Z > Task :runtime:retropack-runtime-pcsx:packageDebugAssets UP-TO-DATE
+2026-09-27T05:17:26.6254377Z > Task :runtime:retropack-runtime-ppsspp:mergeDebugShaders UP-TO-DATE
+2026-09-27T05:17:26.6283913Z > Task :runtime:retropack-runtime-ppsspp:compileDebugShaders NO-SOURCE
+2026-09-27T05:17:26.6344157Z > Task :runtime:retropack-runtime-ppsspp:generateDebugAssets UP-TO-DATE
+2026-09-27T05:17:26.6394031Z > Task :runtime:retropack-runtime-ppsspp:packageDebugAssets UP-TO-DATE
+2026-09-27T05:17:26.6445431Z > Task :runtime:retropack-runtime-snes9x:mergeDebugShaders UP-TO-DATE
+2026-09-27T05:17:26.6521241Z > Task :runtime:retropack-runtime-snes9x:compileDebugShaders NO-SOURCE
+2026-09-27T05:17:26.6596693Z > Task :runtime:retropack-runtime-snes9x:generateDebugAssets UP-TO-DATE
+2026-09-27T05:17:26.6603812Z > Task :runtime:retropack-runtime-snes9x:packageDebugAssets UP-TO-DATE
+2026-09-27T05:17:26.6604673Z > Task :template-apk:mergeDebugAssets
+2026-09-27T05:17:26.6605279Z > Task :template-apk:compressDebugAssets
+2026-09-27T05:17:26.6606862Z > Task :runtime:retropack-runtime-mgba:bundleLibRuntimeToJarDebug
+2026-09-27T05:17:26.6653822Z > Task :runtime:retropack-runtime-genesis:bundleLibRuntimeToJarDebug
+2026-09-27T05:17:26.6723094Z > Task :runtime:retropack-runtime-snes9x:bundleLibRuntimeToJarDebug
+2026-09-27T05:17:28.5174322Z > Task :runtime:retropack-runtime-fceumm:bundleLibRuntimeToJarDebug
+2026-09-27T05:17:28.5206290Z > Task :runtime:retropack-runtime-pce:bundleLibRuntimeToJarDebug
+2026-09-27T05:17:28.5264198Z > Task :runtime:retropack-runtime-fbneo:bundleLibRuntimeToJarDebug
+2026-09-27T05:17:28.7153800Z > Task :runtime:retropack-runtime-pcsx:bundleLibRuntimeToJarDebug
+2026-09-27T05:17:28.7167940Z > Task :runtime:retropack-runtime-mupen64:bundleLibRuntimeToJarDebug
+2026-09-27T05:17:28.7183674Z > Task :runtime:retropack-runtime-ppsspp:bundleLibRuntimeToJarDebug
+2026-09-27T05:17:28.8214188Z > Task :runtime:retropack-runtime-melonds:bundleLibRuntimeToJarDebug
+2026-09-27T05:17:28.9124123Z > Task :runtime:retropack-runtime-common:bundleLibRuntimeToJarDebug
+2026-09-27T05:17:29.0134946Z > Task :template-apk:desugarDebugFileDependencies
+2026-09-27T05:17:29.0153908Z > Task :runtime:retropack-runtime-common:processDebugJavaRes UP-TO-DATE
+2026-09-27T05:17:29.0225118Z > Task :runtime:retropack-runtime-fbneo:processDebugJavaRes UP-TO-DATE
+2026-09-27T05:17:29.0226255Z > Task :runtime:retropack-runtime-fceumm:processDebugJavaRes UP-TO-DATE
+2026-09-27T05:17:29.0304678Z > Task :runtime:retropack-runtime-genesis:processDebugJavaRes UP-TO-DATE
+2026-09-27T05:17:29.0326627Z > Task :runtime:retropack-runtime-melonds:processDebugJavaRes UP-TO-DATE
+2026-09-27T05:17:29.0363838Z > Task :runtime:retropack-runtime-mgba:processDebugJavaRes UP-TO-DATE
+2026-09-27T05:17:29.0383850Z > Task :runtime:retropack-runtime-mupen64:processDebugJavaRes UP-TO-DATE
+2026-09-27T05:17:29.0413898Z > Task :runtime:retropack-runtime-pce:processDebugJavaRes UP-TO-DATE
+2026-09-27T05:17:29.0450718Z > Task :runtime:retropack-runtime-pcsx:processDebugJavaRes UP-TO-DATE
+2026-09-27T05:17:29.0483867Z > Task :runtime:retropack-runtime-ppsspp:processDebugJavaRes UP-TO-DATE
+2026-09-27T05:17:29.0511108Z > Task :runtime:retropack-runtime-snes9x:processDebugJavaRes UP-TO-DATE
+2026-09-27T05:17:29.1123946Z > Task :template-apk:checkDebugDuplicateClasses
+2026-09-27T05:17:29.1184225Z > Task :runtime:retropack-runtime-mgba:bundleLibRuntimeToDirDebug
+2026-09-27T05:17:30.1204228Z 
+2026-09-27T05:17:30.1294378Z > Task :template-apk:compileDebugKotlin
+2026-09-27T05:17:30.1320595Z w: file:///home/runner/work/retro-manager/retro-manager/template-apk/src/main/kotlin/com/retropack/runtime/GameActivity.kt:159:57 Condition is always 'true'.
+2026-09-27T05:17:30.1358239Z w: file:///home/runner/work/retro-manager/retro-manager/template-apk/src/main/kotlin/com/retropack/runtime/GameActivity.kt:953:41 'val defaultDisplay: Display!' is deprecated. Deprecated in Java.
+2026-09-27T05:17:30.1367432Z w: file:///home/runner/work/retro-manager/retro-manager/template-apk/src/main/kotlin/com/retropack/runtime/GameActivity.kt:972:26 'var systemUiVisibility: Int' is deprecated. Deprecated in Java.
+2026-09-27T05:17:30.1425262Z w: file:///home/runner/work/retro-manager/retro-manager/template-apk/src/main/kotlin/com/retropack/runtime/GameActivity.kt:973:18 'static field SYSTEM_UI_FLAG_FULLSCREEN: Int' is deprecated. Deprecated in Java.
+2026-09-27T05:17:30.1487980Z w: file:///home/runner/work/retro-manager/retro-manager/template-apk/src/main/kotlin/com/retropack/runtime/GameActivity.kt:974:25 'static field SYSTEM_UI_FLAG_HIDE_NAVIGATION: Int' is deprecated. Deprecated in Java.
+2026-09-27T05:17:30.1545182Z w: file:///home/runner/work/retro-manager/retro-manager/template-apk/src/main/kotlin/com/retropack/runtime/GameActivity.kt:975:25 'static field SYSTEM_UI_FLAG_IMMERSIVE_STICKY: Int' is deprecated. Deprecated in Java.
+2026-09-27T05:17:30.1584485Z w: file:///home/runner/work/retro-manager/retro-manager/template-apk/src/main/kotlin/com/retropack/runtime/GameActivity.kt:976:25 'static field SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN: Int' is deprecated. Deprecated in Java.
+2026-09-27T05:17:30.1655303Z w: file:///home/runner/work/retro-manager/retro-manager/template-apk/src/main/kotlin/com/retropack/runtime/GameActivity.kt:977:25 'static field SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION: Int' is deprecated. Deprecated in Java.
+2026-09-27T05:17:30.1669824Z w: file:///home/runner/work/retro-manager/retro-manager/template-apk/src/main/kotlin/com/retropack/runtime/GameActivity.kt:978:25 'static field SYSTEM_UI_FLAG_LAYOUT_STABLE: Int' is deprecated. Deprecated in Java.
+2026-09-27T05:17:39.8143315Z 
+2026-09-27T05:17:39.8164006Z > Task :template-apk:compileDebugJavaWithJavac NO-SOURCE
+2026-09-27T05:17:40.3119852Z > Task :template-apk:dexBuilderDebug
+2026-09-27T05:17:40.4133000Z > Task :template-apk:mergeDebugGlobalSynthetics
+2026-09-27T05:17:40.4180127Z > Task :template-apk:processDebugJavaRes
+2026-09-27T05:17:40.4230531Z > Task :runtime:retropack-runtime-snes9x:bundleLibRuntimeToDirDebug
+2026-09-27T05:17:40.4233795Z > Task :runtime:retropack-runtime-genesis:bundleLibRuntimeToDirDebug
+2026-09-27T05:17:40.5134055Z > Task :runtime:retropack-runtime-fceumm:bundleLibRuntimeToDirDebug
+2026-09-27T05:17:40.5163833Z > Task :runtime:retropack-runtime-pce:bundleLibRuntimeToDirDebug
+2026-09-27T05:17:40.5164954Z > Task :runtime:retropack-runtime-fbneo:bundleLibRuntimeToDirDebug
+2026-09-27T05:17:40.5174799Z > Task :runtime:retropack-runtime-pcsx:bundleLibRuntimeToDirDebug
+2026-09-27T05:17:40.6173255Z > Task :template-apk:mergeDebugJavaResource
+2026-09-27T05:17:40.6264259Z > Task :runtime:retropack-runtime-mupen64:bundleLibRuntimeToDirDebug
+2026-09-27T05:17:40.6295853Z > Task :runtime:retropack-runtime-ppsspp:bundleLibRuntimeToDirDebug
+2026-09-27T05:17:40.6364890Z > Task :runtime:retropack-runtime-melonds:bundleLibRuntimeToDirDebug
+2026-09-27T05:17:40.7161641Z > Task :runtime:retropack-runtime-common:bundleLibRuntimeToDirDebug
+2026-09-27T05:17:40.7191812Z > Task :template-apk:mergeDebugJniLibFolders
+2026-09-27T05:17:40.7218064Z > Task :runtime:retropack-runtime-common:mergeDebugJniLibFolders UP-TO-DATE
+2026-09-27T05:17:40.7249872Z > Task :runtime:retropack-runtime-common:mergeDebugNativeLibs NO-SOURCE
+2026-09-27T05:17:40.7298451Z > Task :runtime:retropack-runtime-common:copyDebugJniLibsProjectOnly
+2026-09-27T05:17:40.8123343Z > Task :runtime:retropack-runtime-fbneo:configureCMakeDebug[arm64-v8a]
+2026-09-27T05:17:40.8141325Z > Task :template-apk:mergeProjectDexDebug
+2026-09-27T05:17:40.8184137Z > Task :runtime:retropack-runtime-fbneo:buildCMakeDebug[arm64-v8a]
+2026-09-27T05:17:40.8193196Z > Task :runtime:retropack-runtime-fbneo:configureCMakeDebug[x86_64]
+2026-09-27T05:17:40.8194384Z > Task :runtime:retropack-runtime-fbneo:buildCMakeDebug[x86_64]
+2026-09-27T05:17:40.8195653Z > Task :runtime:retropack-runtime-fbneo:mergeDebugJniLibFolders UP-TO-DATE
+2026-09-27T05:17:40.8197054Z > Task :runtime:retropack-runtime-fbneo:mergeDebugNativeLibs UP-TO-DATE
+2026-09-27T05:17:40.9121899Z > Task :runtime:retropack-runtime-fbneo:copyDebugJniLibsProjectOnly
+2026-09-27T05:17:40.9151069Z > Task :runtime:retropack-runtime-fceumm:configureCMakeDebug[arm64-v8a]
+2026-09-27T05:17:40.9186795Z > Task :runtime:retropack-runtime-fceumm:buildCMakeDebug[arm64-v8a]
+2026-09-27T05:17:40.9203607Z > Task :runtime:retropack-runtime-fceumm:configureCMakeDebug[x86_64]
+2026-09-27T05:17:40.9241930Z > Task :runtime:retropack-runtime-fceumm:buildCMakeDebug[x86_64]
+2026-09-27T05:17:40.9273894Z > Task :runtime:retropack-runtime-fceumm:mergeDebugJniLibFolders UP-TO-DATE
+2026-09-27T05:17:40.9293851Z > Task :runtime:retropack-runtime-fceumm:mergeDebugNativeLibs UP-TO-DATE
+2026-09-27T05:17:41.0141729Z > Task :runtime:retropack-runtime-fceumm:copyDebugJniLibsProjectOnly
+2026-09-27T05:17:41.0185637Z > Task :runtime:retropack-runtime-genesis:configureCMakeDebug[arm64-v8a]
+2026-09-27T05:17:41.0228461Z > Task :runtime:retropack-runtime-genesis:buildCMakeDebug[arm64-v8a]
+2026-09-27T05:17:41.0243874Z > Task :runtime:retropack-runtime-genesis:configureCMakeDebug[x86_64]
+2026-09-27T05:17:41.0263756Z > Task :runtime:retropack-runtime-genesis:buildCMakeDebug[x86_64]
+2026-09-27T05:17:41.0283833Z > Task :runtime:retropack-runtime-genesis:mergeDebugJniLibFolders UP-TO-DATE
+2026-09-27T05:17:41.0313810Z > Task :runtime:retropack-runtime-genesis:mergeDebugNativeLibs UP-TO-DATE
+2026-09-27T05:17:41.1124985Z > Task :runtime:retropack-runtime-melonds:configureCMakeDebug[arm64-v8a]
+2026-09-27T05:17:41.1183993Z > Task :runtime:retropack-runtime-genesis:copyDebugJniLibsProjectOnly
+2026-09-27T05:17:41.1221900Z > Task :runtime:retropack-runtime-melonds:buildCMakeDebug[arm64-v8a]
+2026-09-27T05:17:41.1261237Z > Task :runtime:retropack-runtime-melonds:configureCMakeDebug[x86_64]
+2026-09-27T05:17:41.1263148Z > Task :runtime:retropack-runtime-melonds:buildCMakeDebug[x86_64]
+2026-09-27T05:17:41.1264590Z > Task :runtime:retropack-runtime-melonds:mergeDebugJniLibFolders UP-TO-DATE
+2026-09-27T05:17:41.1266044Z > Task :runtime:retropack-runtime-melonds:mergeDebugNativeLibs UP-TO-DATE
+2026-09-27T05:17:41.2134324Z > Task :runtime:retropack-runtime-melonds:copyDebugJniLibsProjectOnly
+2026-09-27T05:17:41.2174334Z > Task :runtime:retropack-runtime-mgba:configureCMakeDebug[arm64-v8a]
+2026-09-27T05:17:41.2203798Z > Task :template-apk:mergeExtDexDebug
+2026-09-27T05:17:41.4150643Z > Task :runtime:retropack-runtime-mgba:buildCMakeDebug[arm64-v8a]
+2026-09-27T05:17:41.4173577Z > Task :runtime:retropack-runtime-mgba:configureCMakeDebug[x86_64]
+2026-09-27T05:17:41.6163578Z > Task :runtime:retropack-runtime-mgba:buildCMakeDebug[x86_64]
+2026-09-27T05:17:41.6180668Z > Task :runtime:retropack-runtime-mgba:mergeDebugJniLibFolders UP-TO-DATE
+2026-09-27T05:17:41.7134375Z > Task :runtime:retropack-runtime-mgba:mergeDebugNativeLibs UP-TO-DATE
+2026-09-27T05:17:41.7173369Z > Task :runtime:retropack-runtime-mupen64:configureCMakeDebug[arm64-v8a]
+2026-09-27T05:17:41.7183293Z > Task :runtime:retropack-runtime-mupen64:buildCMakeDebug[arm64-v8a]
+2026-09-27T05:17:41.7271078Z > Task :runtime:retropack-runtime-mgba:copyDebugJniLibsProjectOnly
+2026-09-27T05:17:41.7272846Z > Task :runtime:retropack-runtime-mupen64:configureCMakeDebug[x86_64]
+2026-09-27T05:17:41.7297663Z > Task :runtime:retropack-runtime-mupen64:buildCMakeDebug[x86_64]
+2026-09-27T05:17:41.7344100Z > Task :runtime:retropack-runtime-mupen64:mergeDebugJniLibFolders UP-TO-DATE
+2026-09-27T05:17:41.7373646Z > Task :runtime:retropack-runtime-mupen64:mergeDebugNativeLibs UP-TO-DATE
+2026-09-27T05:17:41.7405355Z > Task :runtime:retropack-runtime-pce:configureCMakeDebug[arm64-v8a]
+2026-09-27T05:17:41.8164134Z > Task :runtime:retropack-runtime-mupen64:copyDebugJniLibsProjectOnly
+2026-09-27T05:17:41.8223866Z > Task :runtime:retropack-runtime-pce:buildCMakeDebug[arm64-v8a]
+2026-09-27T05:17:41.8246598Z > Task :runtime:retropack-runtime-pce:configureCMakeDebug[x86_64]
+2026-09-27T05:17:41.8274093Z > Task :runtime:retropack-runtime-pce:buildCMakeDebug[x86_64]
+2026-09-27T05:17:41.8283680Z > Task :runtime:retropack-runtime-pce:mergeDebugJniLibFolders UP-TO-DATE
+2026-09-27T05:17:41.8313628Z > Task :runtime:retropack-runtime-pce:mergeDebugNativeLibs UP-TO-DATE
+2026-09-27T05:17:41.8314900Z > Task :runtime:retropack-runtime-pce:copyDebugJniLibsProjectOnly
+2026-09-27T05:17:41.8339595Z > Task :runtime:retropack-runtime-pcsx:configureCMakeDebug[arm64-v8a]
+2026-09-27T05:17:41.8373678Z > Task :runtime:retropack-runtime-pcsx:buildCMakeDebug[arm64-v8a]
+2026-09-27T05:17:41.8403729Z > Task :runtime:retropack-runtime-pcsx:configureCMakeDebug[x86_64]
+2026-09-27T05:17:41.8433627Z > Task :runtime:retropack-runtime-pcsx:buildCMakeDebug[x86_64]
+2026-09-27T05:17:41.8434928Z > Task :runtime:retropack-runtime-pcsx:mergeDebugJniLibFolders UP-TO-DATE
+2026-09-27T05:17:41.8463893Z > Task :runtime:retropack-runtime-pcsx:mergeDebugNativeLibs UP-TO-DATE
+2026-09-27T05:17:41.9134383Z > Task :runtime:retropack-runtime-pcsx:copyDebugJniLibsProjectOnly
+2026-09-27T05:17:41.9144567Z > Task :runtime:retropack-runtime-ppsspp:configureCMakeDebug[arm64-v8a]
+2026-09-27T05:17:41.9174078Z > Task :runtime:retropack-runtime-ppsspp:buildCMakeDebug[arm64-v8a]
+2026-09-27T05:17:41.9194398Z > Task :runtime:retropack-runtime-ppsspp:configureCMakeDebug[x86_64]
+2026-09-27T05:17:41.9215566Z > Task :runtime:retropack-runtime-ppsspp:buildCMakeDebug[x86_64]
+2026-09-27T05:17:41.9217107Z > Task :runtime:retropack-runtime-ppsspp:mergeDebugJniLibFolders UP-TO-DATE
+2026-09-27T05:17:41.9218485Z > Task :runtime:retropack-runtime-ppsspp:mergeDebugNativeLibs UP-TO-DATE
+2026-09-27T05:17:41.9219778Z > Task :runtime:retropack-runtime-snes9x:configureCMakeDebug[arm64-v8a]
+2026-09-27T05:17:41.9221029Z > Task :runtime:retropack-runtime-ppsspp:copyDebugJniLibsProjectOnly
+2026-09-27T05:17:42.0134359Z > Task :runtime:retropack-runtime-snes9x:buildCMakeDebug[arm64-v8a]
+2026-09-27T05:17:42.0163927Z > Task :runtime:retropack-runtime-snes9x:configureCMakeDebug[x86_64]
+2026-09-27T05:17:42.0193855Z > Task :runtime:retropack-runtime-snes9x:buildCMakeDebug[x86_64]
+2026-09-27T05:17:42.0223746Z > Task :runtime:retropack-runtime-snes9x:mergeDebugJniLibFolders UP-TO-DATE
+2026-09-27T05:17:42.0236970Z > Task :runtime:retropack-runtime-snes9x:mergeDebugNativeLibs UP-TO-DATE
+2026-09-27T05:17:42.0283777Z > Task :runtime:retropack-runtime-snes9x:copyDebugJniLibsProjectOnly
+2026-09-27T05:17:43.5137679Z > Task :template-apk:validateSigningDebug
+2026-09-27T05:17:43.5138618Z > Task :template-apk:writeDebugAppMetadata
+2026-09-27T05:17:43.5139289Z > Task :template-apk:writeDebugSigningConfigVersions
+2026-09-27T05:17:43.6119645Z > Task :template-apk:mergeLibDexDebug
+2026-09-27T05:17:43.6133488Z > Task :template-apk:mergeDebugNativeLibs
+2026-09-27T05:17:43.8134309Z > Task :template-apk:stripDebugDebugSymbols
+2026-09-27T05:17:44.0853763Z > Task :template-apk:packageDebug
+2026-09-27T05:17:44.0877957Z > Task :template-apk:createDebugApkListingFileRedirect
+2026-09-27T05:17:44.0923893Z > Task :template-apk:assembleDebug
+2026-09-27T05:17:44.0954118Z gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_4-1790486243207.json
+2026-09-27T05:17:44.1013202Z 
+2026-09-27T05:17:44.1045019Z [Incubating] Problems report is available at: file:///home/runner/work/retro-manager/retro-manager/build/reports/problems/problems-report.html
+2026-09-27T05:17:44.1073070Z 
+2026-09-27T05:17:44.1093930Z Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+2026-09-27T05:17:44.1109080Z 
+2026-09-27T05:17:44.1135059Z You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+2026-09-27T05:17:44.1157206Z 
+2026-09-27T05:17:44.1164483Z For more on this, please refer to https://docs.gradle.org/9.5.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+2026-09-27T05:17:44.1193090Z 
+2026-09-27T05:17:44.1193419Z BUILD SUCCESSFUL in 21s
+2026-09-27T05:17:44.1194105Z 294 actionable tasks: 140 executed, 154 up-to-date
+2026-09-27T05:17:44.1195631Z Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.5.1/userguide/configuration_cache_enabling.html

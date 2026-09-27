@@ -1,0 +1,20 @@
+﻿2026-09-27T05:20:31.4712036Z Post job cleanup.
+2026-09-27T05:20:31.5616932Z [command]/usr/bin/git version
+2026-09-27T05:20:31.5664651Z git version 2.55.0
+2026-09-27T05:20:31.5710734Z Temporarily overriding HOME='/home/runner/work/_temp/9ffe9ab8-6f04-41d9-9342-05478a4629d2' before making global git config changes
+2026-09-27T05:20:31.5712202Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-27T05:20:31.5717502Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/retro-manager/retro-manager
+2026-09-27T05:20:31.5759865Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-27T05:20:31.5798479Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-27T05:20:31.6059544Z Entering 'runtime/retropack-runtime-mgba/submodules/mgba'
+2026-09-27T05:20:31.6132926Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-27T05:20:31.6171660Z http.https://github.com/.extraheader
+2026-09-27T05:20:31.6186142Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-09-27T05:20:31.6243627Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-27T05:20:31.6514103Z Entering 'runtime/retropack-runtime-mgba/submodules/mgba'
+2026-09-27T05:20:31.6543391Z http.https://github.com/.extraheader
+2026-09-27T05:20:31.6608555Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-27T05:20:31.6667785Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-27T05:20:31.6944645Z Entering 'runtime/retropack-runtime-mgba/submodules/mgba'
+2026-09-27T05:20:31.6964352Z file:/home/runner/work/retro-manager/retro-manager/.git/modules/runtime/retropack-runtime-mgba/submodules/mgba/config	remote.origin.url
+2026-09-27T05:20:31.7005726Z [command]/usr/bin/git config --file /home/runner/work/retro-manager/retro-manager/.git/modules/runtime/retropack-runtime-mgba/submodules/mgba/config --name-only --get-regexp ^includeIf\.gitdir:
